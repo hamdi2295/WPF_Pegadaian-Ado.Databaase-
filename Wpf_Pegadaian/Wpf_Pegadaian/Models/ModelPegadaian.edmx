@@ -1,0 +1,1435 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="PegadaianModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="CATEGORY">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="NAME" Type="varchar" MaxLength="30" Nullable="false" />
+        </EntityType>
+        <EntityType Name="DETAIL_BUSINESS">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="BUSINESS_AGE" Type="int" />
+          <Property Name="PROVINCE" Type="varchar" MaxLength="1" />
+          <Property Name="REGENCY" Type="varchar" MaxLength="1" />
+          <Property Name="SUB_DISTRICT" Type="varchar" MaxLength="1" />
+          <Property Name="ADDRESS" Type="varchar" MaxLength="1" />
+          <Property Name="PICTURE" Type="varchar" MaxLength="1" />
+          <Property Name="BUSINESS_FINANCING_ID" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="DETAIL_TYPE_VEHICLE">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="POLICE_NUMBER" Type="varchar" MaxLength="1" />
+          <Property Name="STNK_NUMBER" Type="varchar" MaxLength="1" />
+          <Property Name="MACHINE_NUMBER" Type="varchar" MaxLength="1" />
+          <Property Name="BPKB_NUMBER" Type="varchar" MaxLength="1" />
+          <Property Name="BPKB_OWNER" Type="varchar" MaxLength="1" />
+          <Property Name="PICTURE" Type="varchar" MaxLength="1" />
+          <Property Name="ORDER_NUMBER" Type="int" />
+          <Property Name="TYPE_VEHICLE_ID" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="ELECTRONIC">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="BRAND" Type="varchar" MaxLength="1" />
+          <Property Name="TYPE" Type="varchar" MaxLength="1" />
+          <Property Name="YEARS_OF_BUY" Type="int" />
+          <Property Name="MARKET_PRICE" Type="decimal" Precision="18" Scale="0" />
+          <Property Name="CONDITION" Type="varchar" MaxLength="1" />
+          <Property Name="PICTURE" Type="varchar" MaxLength="1" />
+          <Property Name="TRANSACTION_ID" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="GOLD">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="TYPE" Type="varchar" MaxLength="20" Nullable="false" />
+          <Property Name="UNIT" Type="varchar" MaxLength="10" Nullable="false" />
+          <Property Name="SELLING_PRICE" Type="decimal" Precision="18" Scale="0" Nullable="false" />
+          <Property Name="PURCHASE_PRICE" Type="decimal" Precision="18" Scale="0" Nullable="false" />
+        </EntityType>
+        <EntityType Name="GOLD_SAVING">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="ACCOUNT_NUMBER" Type="bigint" />
+          <Property Name="BALANCE" Type="int" />
+          <Property Name="QUANTITY" Type="int" />
+          <Property Name="PRICE" Type="decimal" Precision="18" Scale="0" />
+          <Property Name="TRANSACTION_ID" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="HANDPHONE">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="BRAND" Type="varchar" MaxLength="1" />
+          <Property Name="TYPE" Type="varchar" MaxLength="1" />
+          <Property Name="YEARS_OF_BUY" Type="int" />
+          <Property Name="SELLING_PRICE" Type="decimal" Precision="18" Scale="0" />
+          <Property Name="CONDITION" Type="varchar" MaxLength="1" />
+          <Property Name="PICTURE" Type="varchar" MaxLength="1" />
+          <Property Name="TRANSACTION_ID" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="INSTALLMENT">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="INSTALLMENT_DATE" Type="datetime" Nullable="false" />
+          <Property Name="DUE_DATE" Type="datetime" />
+          <Property Name="AMOUNT" Type="decimal" Precision="18" Scale="0" />
+          <Property Name="INSTALLMENT_AMOUNT" Type="int" />
+          <Property Name="TRANSACTION_ID" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="INSTALLMENT_TYPE">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="NAME" Type="varchar" MaxLength="20" Nullable="false" />
+          <Property Name="DESCRIPTION" Type="varchar" MaxLength="255" />
+        </EntityType>
+        <EntityType Name="JEWELRY">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="LEVEL" Type="varchar" MaxLength="8" />
+          <Property Name="BRUTO" Type="int" Nullable="false" />
+          <Property Name="NETTO" Type="int" Nullable="false" />
+          <Property Name="PICTURE" Type="varchar" MaxLength="255" />
+          <Property Name="TRANSACTION_ID" Type="int" Nullable="false" />
+          <Property Name="GOLD_ID" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="OUTLET">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="NAME" Type="varchar" MaxLength="30" Nullable="false" />
+          <Property Name="PROVINCE" Type="varchar" MaxLength="255" Nullable="false" />
+          <Property Name="REGENCY" Type="varchar" MaxLength="255" Nullable="false" />
+          <Property Name="SUB_DISTRICT" Type="varchar" MaxLength="255" Nullable="false" />
+          <Property Name="ADDRESS" Type="varchar" MaxLength="255" Nullable="false" />
+        </EntityType>
+        <EntityType Name="PRECIOUS_METAL">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="WEIGHT" Type="decimal" Precision="18" Scale="0" />
+          <Property Name="AMOUNT" Type="decimal" Precision="18" Scale="0" />
+          <Property Name="PICTURE" Type="varchar" MaxLength="255" />
+          <Property Name="TRANSACTION_ID" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="PRODUCT">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="NAME" Type="varchar" MaxLength="30" Nullable="false" />
+          <Property Name="CATEGORY_ID" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="ROLE">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="NAME" Type="varchar" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="sysdiagrams">
+          <Key>
+            <PropertyRef Name="diagram_id" />
+          </Key>
+          <Property Name="name" Type="nvarchar" MaxLength="128" Nullable="false" />
+          <Property Name="principal_id" Type="int" Nullable="false" />
+          <Property Name="diagram_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="version" Type="int" />
+          <Property Name="definition" Type="varbinary(max)" />
+        </EntityType>
+        <EntityType Name="TRANSACTION">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="PRODUCT_ID" Type="int" Nullable="false" />
+          <Property Name="INSTALLMENT_TYPE_ID" Type="int" Nullable="false" />
+          <Property Name="OUTLET_ID" Type="int" Nullable="false" />
+          <Property Name="TRANSACTIONS_DATE" Type="timestamp" StoreGeneratedPattern="Computed" Nullable="false" />
+          <Property Name="ADMINISTRATIVE_COST" Type="decimal" Precision="18" Scale="0" Nullable="false" />
+          <Property Name="approved_date" Type="datetime" />
+          <Property Name="approved_status" Type="datetime" />
+          <Property Name="accepted_date" Type="datetime" />
+          <Property Name="accepted_status" Type="char" MaxLength="1" />
+          <Property Name="remaining_amount" Type="decimal" Precision="18" Scale="0" />
+          <Property Name="loan_amount" Type="decimal" Precision="18" Scale="0" />
+          <Property Name="user_id" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="TYPE_BUSINESS_FINANCING">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="CAPITAL_REQUIREMENT" Type="decimal" Precision="18" Scale="0" />
+          <Property Name="BUSINESS_TYPE" Type="varchar" MaxLength="1" />
+          <Property Name="TURNOVER" Type="decimal" Precision="18" Scale="0" />
+          <Property Name="PROFIT" Type="decimal" Precision="18" Scale="0" />
+          <Property Name="TRANSACTION_ID" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="TYPE_LAPTOP">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="BRAND" Type="varchar" MaxLength="1" />
+          <Property Name="TYPE" Type="varchar" MaxLength="1" />
+          <Property Name="HARDDISK_CAPACITY" Type="int" />
+          <Property Name="YEARS_OF_BUY" Type="int" />
+          <Property Name="SELLING_PRICE" Type="decimal" Precision="18" Scale="0" />
+          <Property Name="DESCRIPTION" Type="varchar" MaxLength="1" />
+          <Property Name="PICTURE" Type="varchar" MaxLength="1" />
+          <Property Name="TRANSACTION_ID" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="TYPE_VEHICLE">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="VEHICLE_TYPE" Type="varchar" MaxLength="1" />
+          <Property Name="BRAND" Type="varchar" MaxLength="1" />
+          <Property Name="TYPE" Type="varchar" MaxLength="1" />
+          <Property Name="CYLINDER" Type="int" />
+          <Property Name="YEARS_OF_BUY" Type="int" />
+          <Property Name="MARKET_PRICE" Type="decimal" Precision="18" Scale="0" />
+          <Property Name="DESCRIPTION" Type="varchar" MaxLength="1" />
+          <Property Name="TRANSACTION_ID" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="USER">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="NAME" Type="varchar" MaxLength="50" />
+          <Property Name="IDENTITY_TYPE" Type="varchar" MaxLength="8" Nullable="false" />
+          <Property Name="IDENTITY_NUMBER" Type="varchar" MaxLength="1" Nullable="false" />
+          <Property Name="GENDER" Type="varchar" MaxLength="1" Nullable="false" />
+          <Property Name="BORN_PLACE" Type="varchar" MaxLength="255" Nullable="false" />
+          <Property Name="BORN_DATE" Type="date" Nullable="false" />
+          <Property Name="PROVINCE" Type="varchar" MaxLength="255" Nullable="false" />
+          <Property Name="REGENCY" Type="varchar" MaxLength="255" Nullable="false" />
+          <Property Name="SUB_DISTRICT" Type="varchar" MaxLength="255" Nullable="false" />
+          <Property Name="ADDRESS" Type="varchar" MaxLength="255" Nullable="false" />
+          <Property Name="EMAIL" Type="varchar" MaxLength="255" Nullable="false" />
+          <Property Name="USERNAME" Type="varchar" MaxLength="255" Nullable="false" />
+          <Property Name="PASSWORD" Type="varchar" MaxLength="255" Nullable="false" />
+          <Property Name="BANK_ACCOUNT" Type="varchar" MaxLength="255" Nullable="false" />
+          <Property Name="ROLE_ID" Type="int" Nullable="false" />
+          <Property Name="NUMBER_NPWP" Type="varchar" MaxLength="20" Nullable="false" />
+          <Property Name="PICTURE_NPWP" Type="varchar" MaxLength="255" />
+          <Property Name="PICTURE_IDENTITY" Type="varchar" MaxLength="255" />
+        </EntityType>
+        <Association Name="FK__USER__ROLE_ID__1CF15040">
+          <End Role="ROLE" Type="Self.ROLE" Multiplicity="1" />
+          <End Role="USER" Type="Self.USER" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="ROLE">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="USER">
+              <PropertyRef Name="ROLE_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_BUSINESS_TRANSACTION">
+          <End Role="TRANSACTION" Type="Self.TRANSACTION" Multiplicity="1" />
+          <End Role="TYPE_BUSINESS_FINANCING" Type="Self.TYPE_BUSINESS_FINANCING" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="TRANSACTION">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="TYPE_BUSINESS_FINANCING">
+              <PropertyRef Name="TRANSACTION_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_DETAIL_JEWELRY_GOLD">
+          <End Role="GOLD" Type="Self.GOLD" Multiplicity="1" />
+          <End Role="JEWELRY" Type="Self.JEWELRY" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="GOLD">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="JEWELRY">
+              <PropertyRef Name="GOLD_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_DETAIL_JEWELRY_TRANSACTION">
+          <End Role="TRANSACTION" Type="Self.TRANSACTION" Multiplicity="1" />
+          <End Role="JEWELRY" Type="Self.JEWELRY" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="TRANSACTION">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="JEWELRY">
+              <PropertyRef Name="TRANSACTION_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_DETAIL_TYPE">
+          <End Role="TYPE_BUSINESS_FINANCING" Type="Self.TYPE_BUSINESS_FINANCING" Multiplicity="1" />
+          <End Role="DETAIL_BUSINESS" Type="Self.DETAIL_BUSINESS" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="TYPE_BUSINESS_FINANCING">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="DETAIL_BUSINESS">
+              <PropertyRef Name="BUSINESS_FINANCING_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_DETAIL_VEHICLE">
+          <End Role="TYPE_VEHICLE" Type="Self.TYPE_VEHICLE" Multiplicity="1" />
+          <End Role="DETAIL_TYPE_VEHICLE" Type="Self.DETAIL_TYPE_VEHICLE" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="TYPE_VEHICLE">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="DETAIL_TYPE_VEHICLE">
+              <PropertyRef Name="TYPE_VEHICLE_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_ELECTRONIC_TRANSACTION">
+          <End Role="TRANSACTION" Type="Self.TRANSACTION" Multiplicity="1" />
+          <End Role="ELECTRONIC" Type="Self.ELECTRONIC" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="TRANSACTION">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="ELECTRONIC">
+              <PropertyRef Name="TRANSACTION_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_GOLD_TRANSACTION">
+          <End Role="TRANSACTION" Type="Self.TRANSACTION" Multiplicity="1" />
+          <End Role="GOLD_SAVING" Type="Self.GOLD_SAVING" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="TRANSACTION">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="GOLD_SAVING">
+              <PropertyRef Name="TRANSACTION_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_HANDPHONE_TRANSACTION">
+          <End Role="TRANSACTION" Type="Self.TRANSACTION" Multiplicity="1" />
+          <End Role="HANDPHONE" Type="Self.HANDPHONE" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="TRANSACTION">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="HANDPHONE">
+              <PropertyRef Name="TRANSACTION_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_INSTALLMENT_TRANSACTION">
+          <End Role="TRANSACTION" Type="Self.TRANSACTION" Multiplicity="1" />
+          <End Role="INSTALLMENT" Type="Self.INSTALLMENT" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="TRANSACTION">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="INSTALLMENT">
+              <PropertyRef Name="TRANSACTION_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_LAPTOP_TRANSACTION">
+          <End Role="TRANSACTION" Type="Self.TRANSACTION" Multiplicity="1" />
+          <End Role="TYPE_LAPTOP" Type="Self.TYPE_LAPTOP" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="TRANSACTION">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="TYPE_LAPTOP">
+              <PropertyRef Name="TRANSACTION_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_PRECIOUS_METAL_TRANSACTION">
+          <End Role="TRANSACTION" Type="Self.TRANSACTION" Multiplicity="1" />
+          <End Role="PRECIOUS_METAL" Type="Self.PRECIOUS_METAL" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="TRANSACTION">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="PRECIOUS_METAL">
+              <PropertyRef Name="TRANSACTION_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_PRODUCTS">
+          <End Role="CATEGORY" Type="Self.CATEGORY" Multiplicity="1" />
+          <End Role="PRODUCT" Type="Self.PRODUCT" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="CATEGORY">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="PRODUCT">
+              <PropertyRef Name="CATEGORY_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_TRANSACTION_INSTALLMENT_TYPE">
+          <End Role="INSTALLMENT_TYPE" Type="Self.INSTALLMENT_TYPE" Multiplicity="1" />
+          <End Role="TRANSACTION" Type="Self.TRANSACTION" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="INSTALLMENT_TYPE">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="TRANSACTION">
+              <PropertyRef Name="INSTALLMENT_TYPE_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_TRANSACTION_OUTLET">
+          <End Role="OUTLET" Type="Self.OUTLET" Multiplicity="1" />
+          <End Role="TRANSACTION" Type="Self.TRANSACTION" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="OUTLET">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="TRANSACTION">
+              <PropertyRef Name="OUTLET_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_TRANSACTION_PRODUCT">
+          <End Role="PRODUCT" Type="Self.PRODUCT" Multiplicity="1" />
+          <End Role="TRANSACTION" Type="Self.TRANSACTION" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="PRODUCT">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="TRANSACTION">
+              <PropertyRef Name="PRODUCT_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_TRANSACTION_USER">
+          <End Role="USER" Type="Self.USER" Multiplicity="1" />
+          <End Role="TRANSACTION" Type="Self.TRANSACTION" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="USER">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="TRANSACTION">
+              <PropertyRef Name="user_id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_VEHICLE_TRANSACTION">
+          <End Role="TRANSACTION" Type="Self.TRANSACTION" Multiplicity="1" />
+          <End Role="TYPE_VEHICLE" Type="Self.TYPE_VEHICLE" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="TRANSACTION">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="TYPE_VEHICLE">
+              <PropertyRef Name="TRANSACTION_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="PegadaianModelStoreContainer">
+          <EntitySet Name="CATEGORY" EntityType="Self.CATEGORY" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="DETAIL_BUSINESS" EntityType="Self.DETAIL_BUSINESS" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="DETAIL_TYPE_VEHICLE" EntityType="Self.DETAIL_TYPE_VEHICLE" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="ELECTRONIC" EntityType="Self.ELECTRONIC" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="GOLD" EntityType="Self.GOLD" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="GOLD_SAVING" EntityType="Self.GOLD_SAVING" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="HANDPHONE" EntityType="Self.HANDPHONE" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="INSTALLMENT" EntityType="Self.INSTALLMENT" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="INSTALLMENT_TYPE" EntityType="Self.INSTALLMENT_TYPE" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="JEWELRY" EntityType="Self.JEWELRY" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="OUTLET" EntityType="Self.OUTLET" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="PRECIOUS_METAL" EntityType="Self.PRECIOUS_METAL" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="PRODUCT" EntityType="Self.PRODUCT" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="ROLE" EntityType="Self.ROLE" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="TRANSACTION" EntityType="Self.TRANSACTION" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="TYPE_BUSINESS_FINANCING" EntityType="Self.TYPE_BUSINESS_FINANCING" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="TYPE_LAPTOP" EntityType="Self.TYPE_LAPTOP" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="TYPE_VEHICLE" EntityType="Self.TYPE_VEHICLE" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="USER" EntityType="Self.USER" Schema="dbo" store:Type="Tables" />
+          <AssociationSet Name="FK__USER__ROLE_ID__1CF15040" Association="Self.FK__USER__ROLE_ID__1CF15040">
+            <End Role="ROLE" EntitySet="ROLE" />
+            <End Role="USER" EntitySet="USER" />
+          </AssociationSet>
+          <AssociationSet Name="FK_BUSINESS_TRANSACTION" Association="Self.FK_BUSINESS_TRANSACTION">
+            <End Role="TRANSACTION" EntitySet="TRANSACTION" />
+            <End Role="TYPE_BUSINESS_FINANCING" EntitySet="TYPE_BUSINESS_FINANCING" />
+          </AssociationSet>
+          <AssociationSet Name="FK_DETAIL_JEWELRY_GOLD" Association="Self.FK_DETAIL_JEWELRY_GOLD">
+            <End Role="GOLD" EntitySet="GOLD" />
+            <End Role="JEWELRY" EntitySet="JEWELRY" />
+          </AssociationSet>
+          <AssociationSet Name="FK_DETAIL_JEWELRY_TRANSACTION" Association="Self.FK_DETAIL_JEWELRY_TRANSACTION">
+            <End Role="TRANSACTION" EntitySet="TRANSACTION" />
+            <End Role="JEWELRY" EntitySet="JEWELRY" />
+          </AssociationSet>
+          <AssociationSet Name="FK_DETAIL_TYPE" Association="Self.FK_DETAIL_TYPE">
+            <End Role="TYPE_BUSINESS_FINANCING" EntitySet="TYPE_BUSINESS_FINANCING" />
+            <End Role="DETAIL_BUSINESS" EntitySet="DETAIL_BUSINESS" />
+          </AssociationSet>
+          <AssociationSet Name="FK_DETAIL_VEHICLE" Association="Self.FK_DETAIL_VEHICLE">
+            <End Role="TYPE_VEHICLE" EntitySet="TYPE_VEHICLE" />
+            <End Role="DETAIL_TYPE_VEHICLE" EntitySet="DETAIL_TYPE_VEHICLE" />
+          </AssociationSet>
+          <AssociationSet Name="FK_ELECTRONIC_TRANSACTION" Association="Self.FK_ELECTRONIC_TRANSACTION">
+            <End Role="TRANSACTION" EntitySet="TRANSACTION" />
+            <End Role="ELECTRONIC" EntitySet="ELECTRONIC" />
+          </AssociationSet>
+          <AssociationSet Name="FK_GOLD_TRANSACTION" Association="Self.FK_GOLD_TRANSACTION">
+            <End Role="TRANSACTION" EntitySet="TRANSACTION" />
+            <End Role="GOLD_SAVING" EntitySet="GOLD_SAVING" />
+          </AssociationSet>
+          <AssociationSet Name="FK_HANDPHONE_TRANSACTION" Association="Self.FK_HANDPHONE_TRANSACTION">
+            <End Role="TRANSACTION" EntitySet="TRANSACTION" />
+            <End Role="HANDPHONE" EntitySet="HANDPHONE" />
+          </AssociationSet>
+          <AssociationSet Name="FK_INSTALLMENT_TRANSACTION" Association="Self.FK_INSTALLMENT_TRANSACTION">
+            <End Role="TRANSACTION" EntitySet="TRANSACTION" />
+            <End Role="INSTALLMENT" EntitySet="INSTALLMENT" />
+          </AssociationSet>
+          <AssociationSet Name="FK_LAPTOP_TRANSACTION" Association="Self.FK_LAPTOP_TRANSACTION">
+            <End Role="TRANSACTION" EntitySet="TRANSACTION" />
+            <End Role="TYPE_LAPTOP" EntitySet="TYPE_LAPTOP" />
+          </AssociationSet>
+          <AssociationSet Name="FK_PRECIOUS_METAL_TRANSACTION" Association="Self.FK_PRECIOUS_METAL_TRANSACTION">
+            <End Role="TRANSACTION" EntitySet="TRANSACTION" />
+            <End Role="PRECIOUS_METAL" EntitySet="PRECIOUS_METAL" />
+          </AssociationSet>
+          <AssociationSet Name="FK_PRODUCTS" Association="Self.FK_PRODUCTS">
+            <End Role="CATEGORY" EntitySet="CATEGORY" />
+            <End Role="PRODUCT" EntitySet="PRODUCT" />
+          </AssociationSet>
+          <AssociationSet Name="FK_TRANSACTION_INSTALLMENT_TYPE" Association="Self.FK_TRANSACTION_INSTALLMENT_TYPE">
+            <End Role="INSTALLMENT_TYPE" EntitySet="INSTALLMENT_TYPE" />
+            <End Role="TRANSACTION" EntitySet="TRANSACTION" />
+          </AssociationSet>
+          <AssociationSet Name="FK_TRANSACTION_OUTLET" Association="Self.FK_TRANSACTION_OUTLET">
+            <End Role="OUTLET" EntitySet="OUTLET" />
+            <End Role="TRANSACTION" EntitySet="TRANSACTION" />
+          </AssociationSet>
+          <AssociationSet Name="FK_TRANSACTION_PRODUCT" Association="Self.FK_TRANSACTION_PRODUCT">
+            <End Role="PRODUCT" EntitySet="PRODUCT" />
+            <End Role="TRANSACTION" EntitySet="TRANSACTION" />
+          </AssociationSet>
+          <AssociationSet Name="FK_TRANSACTION_USER" Association="Self.FK_TRANSACTION_USER">
+            <End Role="USER" EntitySet="USER" />
+            <End Role="TRANSACTION" EntitySet="TRANSACTION" />
+          </AssociationSet>
+          <AssociationSet Name="FK_VEHICLE_TRANSACTION" Association="Self.FK_VEHICLE_TRANSACTION">
+            <End Role="TRANSACTION" EntitySet="TRANSACTION" />
+            <End Role="TYPE_VEHICLE" EntitySet="TYPE_VEHICLE" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="PegadaianModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="CATEGORY">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="NAME" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
+          <NavigationProperty Name="PRODUCTs" Relationship="Self.FK_PRODUCTS" FromRole="CATEGORY" ToRole="PRODUCT" />
+        </EntityType>
+        <EntityType Name="DETAIL_BUSINESS">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="BUSINESS_AGE" Type="Int32" />
+          <Property Name="PROVINCE" Type="String" MaxLength="1" FixedLength="false" Unicode="false" />
+          <Property Name="REGENCY" Type="String" MaxLength="1" FixedLength="false" Unicode="false" />
+          <Property Name="SUB_DISTRICT" Type="String" MaxLength="1" FixedLength="false" Unicode="false" />
+          <Property Name="ADDRESS" Type="String" MaxLength="1" FixedLength="false" Unicode="false" />
+          <Property Name="PICTURE" Type="String" MaxLength="1" FixedLength="false" Unicode="false" />
+          <Property Name="BUSINESS_FINANCING_ID" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="TYPE_BUSINESS_FINANCING" Relationship="Self.FK_DETAIL_TYPE" FromRole="DETAIL_BUSINESS" ToRole="TYPE_BUSINESS_FINANCING" />
+        </EntityType>
+        <EntityType Name="DETAIL_TYPE_VEHICLE">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="POLICE_NUMBER" Type="String" MaxLength="1" FixedLength="false" Unicode="false" />
+          <Property Name="STNK_NUMBER" Type="String" MaxLength="1" FixedLength="false" Unicode="false" />
+          <Property Name="MACHINE_NUMBER" Type="String" MaxLength="1" FixedLength="false" Unicode="false" />
+          <Property Name="BPKB_NUMBER" Type="String" MaxLength="1" FixedLength="false" Unicode="false" />
+          <Property Name="BPKB_OWNER" Type="String" MaxLength="1" FixedLength="false" Unicode="false" />
+          <Property Name="PICTURE" Type="String" MaxLength="1" FixedLength="false" Unicode="false" />
+          <Property Name="ORDER_NUMBER" Type="Int32" />
+          <Property Name="TYPE_VEHICLE_ID" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="TYPE_VEHICLE" Relationship="Self.FK_DETAIL_VEHICLE" FromRole="DETAIL_TYPE_VEHICLE" ToRole="TYPE_VEHICLE" />
+        </EntityType>
+        <EntityType Name="ELECTRONIC">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="BRAND" Type="String" MaxLength="1" FixedLength="false" Unicode="false" />
+          <Property Name="TYPE" Type="String" MaxLength="1" FixedLength="false" Unicode="false" />
+          <Property Name="YEARS_OF_BUY" Type="Int32" />
+          <Property Name="MARKET_PRICE" Type="Decimal" Precision="18" Scale="0" />
+          <Property Name="CONDITION" Type="String" MaxLength="1" FixedLength="false" Unicode="false" />
+          <Property Name="PICTURE" Type="String" MaxLength="1" FixedLength="false" Unicode="false" />
+          <Property Name="TRANSACTION_ID" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="TRANSACTION" Relationship="Self.FK_ELECTRONIC_TRANSACTION" FromRole="ELECTRONIC" ToRole="TRANSACTION" />
+        </EntityType>
+        <EntityType Name="GOLD">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="TYPE" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="UNIT" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="SELLING_PRICE" Type="Decimal" Precision="18" Scale="0" Nullable="false" />
+          <Property Name="PURCHASE_PRICE" Type="Decimal" Precision="18" Scale="0" Nullable="false" />
+          <NavigationProperty Name="JEWELRies" Relationship="Self.FK_DETAIL_JEWELRY_GOLD" FromRole="GOLD" ToRole="JEWELRY" />
+        </EntityType>
+        <EntityType Name="GOLD_SAVING">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="ACCOUNT_NUMBER" Type="Int64" />
+          <Property Name="BALANCE" Type="Int32" />
+          <Property Name="QUANTITY" Type="Int32" />
+          <Property Name="PRICE" Type="Decimal" Precision="18" Scale="0" />
+          <Property Name="TRANSACTION_ID" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="TRANSACTION" Relationship="Self.FK_GOLD_TRANSACTION" FromRole="GOLD_SAVING" ToRole="TRANSACTION" />
+        </EntityType>
+        <EntityType Name="HANDPHONE">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="BRAND" Type="String" MaxLength="1" FixedLength="false" Unicode="false" />
+          <Property Name="TYPE" Type="String" MaxLength="1" FixedLength="false" Unicode="false" />
+          <Property Name="YEARS_OF_BUY" Type="Int32" />
+          <Property Name="SELLING_PRICE" Type="Decimal" Precision="18" Scale="0" />
+          <Property Name="CONDITION" Type="String" MaxLength="1" FixedLength="false" Unicode="false" />
+          <Property Name="PICTURE" Type="String" MaxLength="1" FixedLength="false" Unicode="false" />
+          <Property Name="TRANSACTION_ID" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="TRANSACTION" Relationship="Self.FK_HANDPHONE_TRANSACTION" FromRole="HANDPHONE" ToRole="TRANSACTION" />
+        </EntityType>
+        <EntityType Name="INSTALLMENT">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="INSTALLMENT_DATE" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="DUE_DATE" Type="DateTime" Precision="3" />
+          <Property Name="AMOUNT" Type="Decimal" Precision="18" Scale="0" />
+          <Property Name="INSTALLMENT_AMOUNT" Type="Int32" />
+          <Property Name="TRANSACTION_ID" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="TRANSACTION" Relationship="Self.FK_INSTALLMENT_TRANSACTION" FromRole="INSTALLMENT" ToRole="TRANSACTION" />
+        </EntityType>
+        <EntityType Name="INSTALLMENT_TYPE">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="NAME" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="DESCRIPTION" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <NavigationProperty Name="TRANSACTIONs" Relationship="Self.FK_TRANSACTION_INSTALLMENT_TYPE" FromRole="INSTALLMENT_TYPE" ToRole="TRANSACTION" />
+        </EntityType>
+        <EntityType Name="JEWELRY">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="LEVEL" Type="String" MaxLength="8" FixedLength="false" Unicode="false" />
+          <Property Name="BRUTO" Type="Int32" Nullable="false" />
+          <Property Name="NETTO" Type="Int32" Nullable="false" />
+          <Property Name="PICTURE" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="TRANSACTION_ID" Type="Int32" Nullable="false" />
+          <Property Name="GOLD_ID" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="GOLD" Relationship="Self.FK_DETAIL_JEWELRY_GOLD" FromRole="JEWELRY" ToRole="GOLD" />
+          <NavigationProperty Name="TRANSACTION" Relationship="Self.FK_DETAIL_JEWELRY_TRANSACTION" FromRole="JEWELRY" ToRole="TRANSACTION" />
+        </EntityType>
+        <EntityType Name="OUTLET">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="NAME" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="PROVINCE" Type="String" MaxLength="255" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="REGENCY" Type="String" MaxLength="255" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="SUB_DISTRICT" Type="String" MaxLength="255" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="ADDRESS" Type="String" MaxLength="255" FixedLength="false" Unicode="false" Nullable="false" />
+          <NavigationProperty Name="TRANSACTIONs" Relationship="Self.FK_TRANSACTION_OUTLET" FromRole="OUTLET" ToRole="TRANSACTION" />
+        </EntityType>
+        <EntityType Name="PRECIOUS_METAL">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="WEIGHT" Type="Decimal" Precision="18" Scale="0" />
+          <Property Name="AMOUNT" Type="Decimal" Precision="18" Scale="0" />
+          <Property Name="PICTURE" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="TRANSACTION_ID" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="TRANSACTION" Relationship="Self.FK_PRECIOUS_METAL_TRANSACTION" FromRole="PRECIOUS_METAL" ToRole="TRANSACTION" />
+        </EntityType>
+        <EntityType Name="PRODUCT">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="NAME" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="CATEGORY_ID" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="CATEGORY" Relationship="Self.FK_PRODUCTS" FromRole="PRODUCT" ToRole="CATEGORY" />
+          <NavigationProperty Name="TRANSACTIONs" Relationship="Self.FK_TRANSACTION_PRODUCT" FromRole="PRODUCT" ToRole="TRANSACTION" />
+        </EntityType>
+        <EntityType Name="ROLE">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="NAME" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <NavigationProperty Name="USERs" Relationship="Self.FK__USER__ROLE_ID__1CF15040" FromRole="ROLE" ToRole="USER" />
+        </EntityType>
+        <EntityType Name="sysdiagram">
+          <Key>
+            <PropertyRef Name="diagram_id" />
+          </Key>
+          <Property Name="name" Type="String" MaxLength="128" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="principal_id" Type="Int32" Nullable="false" />
+          <Property Name="diagram_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="version" Type="Int32" />
+          <Property Name="definition" Type="Binary" MaxLength="Max" FixedLength="false" />
+        </EntityType>
+        <EntityType Name="TRANSACTION">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="PRODUCT_ID" Type="Int32" Nullable="false" />
+          <Property Name="INSTALLMENT_TYPE_ID" Type="Int32" Nullable="false" />
+          <Property Name="OUTLET_ID" Type="Int32" Nullable="false" />
+          <Property Name="TRANSACTIONS_DATE" Type="Binary" MaxLength="8" FixedLength="true" Nullable="false" annotation:StoreGeneratedPattern="Computed" />
+          <Property Name="ADMINISTRATIVE_COST" Type="Decimal" Precision="18" Scale="0" Nullable="false" />
+          <Property Name="approved_date" Type="DateTime" Precision="3" />
+          <Property Name="approved_status" Type="DateTime" Precision="3" />
+          <Property Name="accepted_date" Type="DateTime" Precision="3" />
+          <Property Name="accepted_status" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+          <Property Name="remaining_amount" Type="Decimal" Precision="18" Scale="0" />
+          <Property Name="loan_amount" Type="Decimal" Precision="18" Scale="0" />
+          <Property Name="user_id" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="ELECTRONICs" Relationship="Self.FK_ELECTRONIC_TRANSACTION" FromRole="TRANSACTION" ToRole="ELECTRONIC" />
+          <NavigationProperty Name="GOLD_SAVING" Relationship="Self.FK_GOLD_TRANSACTION" FromRole="TRANSACTION" ToRole="GOLD_SAVING" />
+          <NavigationProperty Name="HANDPHONEs" Relationship="Self.FK_HANDPHONE_TRANSACTION" FromRole="TRANSACTION" ToRole="HANDPHONE" />
+          <NavigationProperty Name="INSTALLMENTs" Relationship="Self.FK_INSTALLMENT_TRANSACTION" FromRole="TRANSACTION" ToRole="INSTALLMENT" />
+          <NavigationProperty Name="INSTALLMENT_TYPE" Relationship="Self.FK_TRANSACTION_INSTALLMENT_TYPE" FromRole="TRANSACTION" ToRole="INSTALLMENT_TYPE" />
+          <NavigationProperty Name="JEWELRies" Relationship="Self.FK_DETAIL_JEWELRY_TRANSACTION" FromRole="TRANSACTION" ToRole="JEWELRY" />
+          <NavigationProperty Name="OUTLET" Relationship="Self.FK_TRANSACTION_OUTLET" FromRole="TRANSACTION" ToRole="OUTLET" />
+          <NavigationProperty Name="PRECIOUS_METAL" Relationship="Self.FK_PRECIOUS_METAL_TRANSACTION" FromRole="TRANSACTION" ToRole="PRECIOUS_METAL" />
+          <NavigationProperty Name="PRODUCT" Relationship="Self.FK_TRANSACTION_PRODUCT" FromRole="TRANSACTION" ToRole="PRODUCT" />
+          <NavigationProperty Name="TYPE_BUSINESS_FINANCING" Relationship="Self.FK_BUSINESS_TRANSACTION" FromRole="TRANSACTION" ToRole="TYPE_BUSINESS_FINANCING" />
+          <NavigationProperty Name="TYPE_LAPTOP" Relationship="Self.FK_LAPTOP_TRANSACTION" FromRole="TRANSACTION" ToRole="TYPE_LAPTOP" />
+          <NavigationProperty Name="USER" Relationship="Self.FK_TRANSACTION_USER" FromRole="TRANSACTION" ToRole="USER" />
+          <NavigationProperty Name="TYPE_VEHICLE" Relationship="Self.FK_VEHICLE_TRANSACTION" FromRole="TRANSACTION" ToRole="TYPE_VEHICLE" />
+        </EntityType>
+        <EntityType Name="TYPE_BUSINESS_FINANCING">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="CAPITAL_REQUIREMENT" Type="Decimal" Precision="18" Scale="0" />
+          <Property Name="BUSINESS_TYPE" Type="String" MaxLength="1" FixedLength="false" Unicode="false" />
+          <Property Name="TURNOVER" Type="Decimal" Precision="18" Scale="0" />
+          <Property Name="PROFIT" Type="Decimal" Precision="18" Scale="0" />
+          <Property Name="TRANSACTION_ID" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="DETAIL_BUSINESS" Relationship="Self.FK_DETAIL_TYPE" FromRole="TYPE_BUSINESS_FINANCING" ToRole="DETAIL_BUSINESS" />
+          <NavigationProperty Name="TRANSACTION" Relationship="Self.FK_BUSINESS_TRANSACTION" FromRole="TYPE_BUSINESS_FINANCING" ToRole="TRANSACTION" />
+        </EntityType>
+        <EntityType Name="TYPE_LAPTOP">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="BRAND" Type="String" MaxLength="1" FixedLength="false" Unicode="false" />
+          <Property Name="TYPE" Type="String" MaxLength="1" FixedLength="false" Unicode="false" />
+          <Property Name="HARDDISK_CAPACITY" Type="Int32" />
+          <Property Name="YEARS_OF_BUY" Type="Int32" />
+          <Property Name="SELLING_PRICE" Type="Decimal" Precision="18" Scale="0" />
+          <Property Name="DESCRIPTION" Type="String" MaxLength="1" FixedLength="false" Unicode="false" />
+          <Property Name="PICTURE" Type="String" MaxLength="1" FixedLength="false" Unicode="false" />
+          <Property Name="TRANSACTION_ID" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="TRANSACTION" Relationship="Self.FK_LAPTOP_TRANSACTION" FromRole="TYPE_LAPTOP" ToRole="TRANSACTION" />
+        </EntityType>
+        <EntityType Name="TYPE_VEHICLE">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="VEHICLE_TYPE" Type="String" MaxLength="1" FixedLength="false" Unicode="false" />
+          <Property Name="BRAND" Type="String" MaxLength="1" FixedLength="false" Unicode="false" />
+          <Property Name="TYPE" Type="String" MaxLength="1" FixedLength="false" Unicode="false" />
+          <Property Name="CYLINDER" Type="Int32" />
+          <Property Name="YEARS_OF_BUY" Type="Int32" />
+          <Property Name="MARKET_PRICE" Type="Decimal" Precision="18" Scale="0" />
+          <Property Name="DESCRIPTION" Type="String" MaxLength="1" FixedLength="false" Unicode="false" />
+          <Property Name="TRANSACTION_ID" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="DETAIL_TYPE_VEHICLE" Relationship="Self.FK_DETAIL_VEHICLE" FromRole="TYPE_VEHICLE" ToRole="DETAIL_TYPE_VEHICLE" />
+          <NavigationProperty Name="TRANSACTION" Relationship="Self.FK_VEHICLE_TRANSACTION" FromRole="TYPE_VEHICLE" ToRole="TRANSACTION" />
+        </EntityType>
+        <EntityType Name="USER">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="NAME" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="IDENTITY_TYPE" Type="String" MaxLength="8" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="IDENTITY_NUMBER" Type="String" MaxLength="1" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="GENDER" Type="String" MaxLength="1" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="BORN_PLACE" Type="String" MaxLength="255" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="BORN_DATE" Type="DateTime" Nullable="false" Precision="0" />
+          <Property Name="PROVINCE" Type="String" MaxLength="255" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="REGENCY" Type="String" MaxLength="255" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="SUB_DISTRICT" Type="String" MaxLength="255" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="ADDRESS" Type="String" MaxLength="255" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="EMAIL" Type="String" MaxLength="255" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="USERNAME" Type="String" MaxLength="255" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="PASSWORD" Type="String" MaxLength="255" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="BANK_ACCOUNT" Type="String" MaxLength="255" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="ROLE_ID" Type="Int32" Nullable="false" />
+          <Property Name="NUMBER_NPWP" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="PICTURE_NPWP" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="PICTURE_IDENTITY" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <NavigationProperty Name="ROLE" Relationship="Self.FK__USER__ROLE_ID__1CF15040" FromRole="USER" ToRole="ROLE" />
+          <NavigationProperty Name="TRANSACTIONs" Relationship="Self.FK_TRANSACTION_USER" FromRole="USER" ToRole="TRANSACTION" />
+        </EntityType>
+        <Association Name="FK_PRODUCTS">
+          <End Role="CATEGORY" Type="Self.CATEGORY" Multiplicity="1" />
+          <End Role="PRODUCT" Type="Self.PRODUCT" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="CATEGORY">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="PRODUCT">
+              <PropertyRef Name="CATEGORY_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_DETAIL_TYPE">
+          <End Role="TYPE_BUSINESS_FINANCING" Type="Self.TYPE_BUSINESS_FINANCING" Multiplicity="1" />
+          <End Role="DETAIL_BUSINESS" Type="Self.DETAIL_BUSINESS" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="TYPE_BUSINESS_FINANCING">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="DETAIL_BUSINESS">
+              <PropertyRef Name="BUSINESS_FINANCING_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_DETAIL_VEHICLE">
+          <End Role="TYPE_VEHICLE" Type="Self.TYPE_VEHICLE" Multiplicity="1" />
+          <End Role="DETAIL_TYPE_VEHICLE" Type="Self.DETAIL_TYPE_VEHICLE" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="TYPE_VEHICLE">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="DETAIL_TYPE_VEHICLE">
+              <PropertyRef Name="TYPE_VEHICLE_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_ELECTRONIC_TRANSACTION">
+          <End Role="TRANSACTION" Type="Self.TRANSACTION" Multiplicity="1" />
+          <End Role="ELECTRONIC" Type="Self.ELECTRONIC" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="TRANSACTION">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="ELECTRONIC">
+              <PropertyRef Name="TRANSACTION_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_DETAIL_JEWELRY_GOLD">
+          <End Role="GOLD" Type="Self.GOLD" Multiplicity="1" />
+          <End Role="JEWELRY" Type="Self.JEWELRY" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="GOLD">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="JEWELRY">
+              <PropertyRef Name="GOLD_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_GOLD_TRANSACTION">
+          <End Role="TRANSACTION" Type="Self.TRANSACTION" Multiplicity="1" />
+          <End Role="GOLD_SAVING" Type="Self.GOLD_SAVING" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="TRANSACTION">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="GOLD_SAVING">
+              <PropertyRef Name="TRANSACTION_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_HANDPHONE_TRANSACTION">
+          <End Role="TRANSACTION" Type="Self.TRANSACTION" Multiplicity="1" />
+          <End Role="HANDPHONE" Type="Self.HANDPHONE" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="TRANSACTION">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="HANDPHONE">
+              <PropertyRef Name="TRANSACTION_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_INSTALLMENT_TRANSACTION">
+          <End Role="TRANSACTION" Type="Self.TRANSACTION" Multiplicity="1" />
+          <End Role="INSTALLMENT" Type="Self.INSTALLMENT" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="TRANSACTION">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="INSTALLMENT">
+              <PropertyRef Name="TRANSACTION_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_TRANSACTION_INSTALLMENT_TYPE">
+          <End Role="INSTALLMENT_TYPE" Type="Self.INSTALLMENT_TYPE" Multiplicity="1" />
+          <End Role="TRANSACTION" Type="Self.TRANSACTION" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="INSTALLMENT_TYPE">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="TRANSACTION">
+              <PropertyRef Name="INSTALLMENT_TYPE_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_DETAIL_JEWELRY_TRANSACTION">
+          <End Role="TRANSACTION" Type="Self.TRANSACTION" Multiplicity="1" />
+          <End Role="JEWELRY" Type="Self.JEWELRY" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="TRANSACTION">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="JEWELRY">
+              <PropertyRef Name="TRANSACTION_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_TRANSACTION_OUTLET">
+          <End Role="OUTLET" Type="Self.OUTLET" Multiplicity="1" />
+          <End Role="TRANSACTION" Type="Self.TRANSACTION" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="OUTLET">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="TRANSACTION">
+              <PropertyRef Name="OUTLET_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_PRECIOUS_METAL_TRANSACTION">
+          <End Role="TRANSACTION" Type="Self.TRANSACTION" Multiplicity="1" />
+          <End Role="PRECIOUS_METAL" Type="Self.PRECIOUS_METAL" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="TRANSACTION">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="PRECIOUS_METAL">
+              <PropertyRef Name="TRANSACTION_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_TRANSACTION_PRODUCT">
+          <End Role="PRODUCT" Type="Self.PRODUCT" Multiplicity="1" />
+          <End Role="TRANSACTION" Type="Self.TRANSACTION" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="PRODUCT">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="TRANSACTION">
+              <PropertyRef Name="PRODUCT_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__USER__ROLE_ID__1CF15040">
+          <End Role="ROLE" Type="Self.ROLE" Multiplicity="1" />
+          <End Role="USER" Type="Self.USER" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="ROLE">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="USER">
+              <PropertyRef Name="ROLE_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_BUSINESS_TRANSACTION">
+          <End Role="TRANSACTION" Type="Self.TRANSACTION" Multiplicity="1" />
+          <End Role="TYPE_BUSINESS_FINANCING" Type="Self.TYPE_BUSINESS_FINANCING" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="TRANSACTION">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="TYPE_BUSINESS_FINANCING">
+              <PropertyRef Name="TRANSACTION_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_LAPTOP_TRANSACTION">
+          <End Role="TRANSACTION" Type="Self.TRANSACTION" Multiplicity="1" />
+          <End Role="TYPE_LAPTOP" Type="Self.TYPE_LAPTOP" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="TRANSACTION">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="TYPE_LAPTOP">
+              <PropertyRef Name="TRANSACTION_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_TRANSACTION_USER">
+          <End Role="USER" Type="Self.USER" Multiplicity="1" />
+          <End Role="TRANSACTION" Type="Self.TRANSACTION" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="USER">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="TRANSACTION">
+              <PropertyRef Name="user_id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_VEHICLE_TRANSACTION">
+          <End Role="TRANSACTION" Type="Self.TRANSACTION" Multiplicity="1" />
+          <End Role="TYPE_VEHICLE" Type="Self.TYPE_VEHICLE" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="TRANSACTION">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="TYPE_VEHICLE">
+              <PropertyRef Name="TRANSACTION_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="pegadaianEntities2" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="CATEGORies" EntityType="Self.CATEGORY" />
+          <EntitySet Name="DETAIL_BUSINESS" EntityType="Self.DETAIL_BUSINESS" />
+          <EntitySet Name="DETAIL_TYPE_VEHICLE" EntityType="Self.DETAIL_TYPE_VEHICLE" />
+          <EntitySet Name="ELECTRONICs" EntityType="Self.ELECTRONIC" />
+          <EntitySet Name="GOLDs" EntityType="Self.GOLD" />
+          <EntitySet Name="GOLD_SAVING" EntityType="Self.GOLD_SAVING" />
+          <EntitySet Name="HANDPHONEs" EntityType="Self.HANDPHONE" />
+          <EntitySet Name="INSTALLMENTs" EntityType="Self.INSTALLMENT" />
+          <EntitySet Name="INSTALLMENT_TYPE" EntityType="Self.INSTALLMENT_TYPE" />
+          <EntitySet Name="JEWELRies" EntityType="Self.JEWELRY" />
+          <EntitySet Name="OUTLETs" EntityType="Self.OUTLET" />
+          <EntitySet Name="PRECIOUS_METAL" EntityType="Self.PRECIOUS_METAL" />
+          <EntitySet Name="PRODUCTs" EntityType="Self.PRODUCT" />
+          <EntitySet Name="ROLEs" EntityType="Self.ROLE" />
+          <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagram" />
+          <EntitySet Name="TRANSACTIONs" EntityType="Self.TRANSACTION" />
+          <EntitySet Name="TYPE_BUSINESS_FINANCING" EntityType="Self.TYPE_BUSINESS_FINANCING" />
+          <EntitySet Name="TYPE_LAPTOP" EntityType="Self.TYPE_LAPTOP" />
+          <EntitySet Name="TYPE_VEHICLE" EntityType="Self.TYPE_VEHICLE" />
+          <EntitySet Name="USERs" EntityType="Self.USER" />
+          <AssociationSet Name="FK_PRODUCTS" Association="Self.FK_PRODUCTS">
+            <End Role="CATEGORY" EntitySet="CATEGORies" />
+            <End Role="PRODUCT" EntitySet="PRODUCTs" />
+          </AssociationSet>
+          <AssociationSet Name="FK_DETAIL_TYPE" Association="Self.FK_DETAIL_TYPE">
+            <End Role="TYPE_BUSINESS_FINANCING" EntitySet="TYPE_BUSINESS_FINANCING" />
+            <End Role="DETAIL_BUSINESS" EntitySet="DETAIL_BUSINESS" />
+          </AssociationSet>
+          <AssociationSet Name="FK_DETAIL_VEHICLE" Association="Self.FK_DETAIL_VEHICLE">
+            <End Role="TYPE_VEHICLE" EntitySet="TYPE_VEHICLE" />
+            <End Role="DETAIL_TYPE_VEHICLE" EntitySet="DETAIL_TYPE_VEHICLE" />
+          </AssociationSet>
+          <AssociationSet Name="FK_ELECTRONIC_TRANSACTION" Association="Self.FK_ELECTRONIC_TRANSACTION">
+            <End Role="TRANSACTION" EntitySet="TRANSACTIONs" />
+            <End Role="ELECTRONIC" EntitySet="ELECTRONICs" />
+          </AssociationSet>
+          <AssociationSet Name="FK_DETAIL_JEWELRY_GOLD" Association="Self.FK_DETAIL_JEWELRY_GOLD">
+            <End Role="GOLD" EntitySet="GOLDs" />
+            <End Role="JEWELRY" EntitySet="JEWELRies" />
+          </AssociationSet>
+          <AssociationSet Name="FK_GOLD_TRANSACTION" Association="Self.FK_GOLD_TRANSACTION">
+            <End Role="TRANSACTION" EntitySet="TRANSACTIONs" />
+            <End Role="GOLD_SAVING" EntitySet="GOLD_SAVING" />
+          </AssociationSet>
+          <AssociationSet Name="FK_HANDPHONE_TRANSACTION" Association="Self.FK_HANDPHONE_TRANSACTION">
+            <End Role="TRANSACTION" EntitySet="TRANSACTIONs" />
+            <End Role="HANDPHONE" EntitySet="HANDPHONEs" />
+          </AssociationSet>
+          <AssociationSet Name="FK_INSTALLMENT_TRANSACTION" Association="Self.FK_INSTALLMENT_TRANSACTION">
+            <End Role="TRANSACTION" EntitySet="TRANSACTIONs" />
+            <End Role="INSTALLMENT" EntitySet="INSTALLMENTs" />
+          </AssociationSet>
+          <AssociationSet Name="FK_TRANSACTION_INSTALLMENT_TYPE" Association="Self.FK_TRANSACTION_INSTALLMENT_TYPE">
+            <End Role="INSTALLMENT_TYPE" EntitySet="INSTALLMENT_TYPE" />
+            <End Role="TRANSACTION" EntitySet="TRANSACTIONs" />
+          </AssociationSet>
+          <AssociationSet Name="FK_DETAIL_JEWELRY_TRANSACTION" Association="Self.FK_DETAIL_JEWELRY_TRANSACTION">
+            <End Role="TRANSACTION" EntitySet="TRANSACTIONs" />
+            <End Role="JEWELRY" EntitySet="JEWELRies" />
+          </AssociationSet>
+          <AssociationSet Name="FK_TRANSACTION_OUTLET" Association="Self.FK_TRANSACTION_OUTLET">
+            <End Role="OUTLET" EntitySet="OUTLETs" />
+            <End Role="TRANSACTION" EntitySet="TRANSACTIONs" />
+          </AssociationSet>
+          <AssociationSet Name="FK_PRECIOUS_METAL_TRANSACTION" Association="Self.FK_PRECIOUS_METAL_TRANSACTION">
+            <End Role="TRANSACTION" EntitySet="TRANSACTIONs" />
+            <End Role="PRECIOUS_METAL" EntitySet="PRECIOUS_METAL" />
+          </AssociationSet>
+          <AssociationSet Name="FK_TRANSACTION_PRODUCT" Association="Self.FK_TRANSACTION_PRODUCT">
+            <End Role="PRODUCT" EntitySet="PRODUCTs" />
+            <End Role="TRANSACTION" EntitySet="TRANSACTIONs" />
+          </AssociationSet>
+          <AssociationSet Name="FK__USER__ROLE_ID__1CF15040" Association="Self.FK__USER__ROLE_ID__1CF15040">
+            <End Role="ROLE" EntitySet="ROLEs" />
+            <End Role="USER" EntitySet="USERs" />
+          </AssociationSet>
+          <AssociationSet Name="FK_BUSINESS_TRANSACTION" Association="Self.FK_BUSINESS_TRANSACTION">
+            <End Role="TRANSACTION" EntitySet="TRANSACTIONs" />
+            <End Role="TYPE_BUSINESS_FINANCING" EntitySet="TYPE_BUSINESS_FINANCING" />
+          </AssociationSet>
+          <AssociationSet Name="FK_LAPTOP_TRANSACTION" Association="Self.FK_LAPTOP_TRANSACTION">
+            <End Role="TRANSACTION" EntitySet="TRANSACTIONs" />
+            <End Role="TYPE_LAPTOP" EntitySet="TYPE_LAPTOP" />
+          </AssociationSet>
+          <AssociationSet Name="FK_TRANSACTION_USER" Association="Self.FK_TRANSACTION_USER">
+            <End Role="USER" EntitySet="USERs" />
+            <End Role="TRANSACTION" EntitySet="TRANSACTIONs" />
+          </AssociationSet>
+          <AssociationSet Name="FK_VEHICLE_TRANSACTION" Association="Self.FK_VEHICLE_TRANSACTION">
+            <End Role="TRANSACTION" EntitySet="TRANSACTIONs" />
+            <End Role="TYPE_VEHICLE" EntitySet="TYPE_VEHICLE" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="PegadaianModelStoreContainer" CdmEntityContainer="pegadaianEntities2">
+          <EntitySetMapping Name="CATEGORies">
+            <EntityTypeMapping TypeName="PegadaianModel.CATEGORY">
+              <MappingFragment StoreEntitySet="CATEGORY">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="NAME" ColumnName="NAME" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="DETAIL_BUSINESS">
+            <EntityTypeMapping TypeName="PegadaianModel.DETAIL_BUSINESS">
+              <MappingFragment StoreEntitySet="DETAIL_BUSINESS">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="BUSINESS_AGE" ColumnName="BUSINESS_AGE" />
+                <ScalarProperty Name="PROVINCE" ColumnName="PROVINCE" />
+                <ScalarProperty Name="REGENCY" ColumnName="REGENCY" />
+                <ScalarProperty Name="SUB_DISTRICT" ColumnName="SUB_DISTRICT" />
+                <ScalarProperty Name="ADDRESS" ColumnName="ADDRESS" />
+                <ScalarProperty Name="PICTURE" ColumnName="PICTURE" />
+                <ScalarProperty Name="BUSINESS_FINANCING_ID" ColumnName="BUSINESS_FINANCING_ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="DETAIL_TYPE_VEHICLE">
+            <EntityTypeMapping TypeName="PegadaianModel.DETAIL_TYPE_VEHICLE">
+              <MappingFragment StoreEntitySet="DETAIL_TYPE_VEHICLE">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="POLICE_NUMBER" ColumnName="POLICE_NUMBER" />
+                <ScalarProperty Name="STNK_NUMBER" ColumnName="STNK_NUMBER" />
+                <ScalarProperty Name="MACHINE_NUMBER" ColumnName="MACHINE_NUMBER" />
+                <ScalarProperty Name="BPKB_NUMBER" ColumnName="BPKB_NUMBER" />
+                <ScalarProperty Name="BPKB_OWNER" ColumnName="BPKB_OWNER" />
+                <ScalarProperty Name="PICTURE" ColumnName="PICTURE" />
+                <ScalarProperty Name="ORDER_NUMBER" ColumnName="ORDER_NUMBER" />
+                <ScalarProperty Name="TYPE_VEHICLE_ID" ColumnName="TYPE_VEHICLE_ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="ELECTRONICs">
+            <EntityTypeMapping TypeName="PegadaianModel.ELECTRONIC">
+              <MappingFragment StoreEntitySet="ELECTRONIC">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="BRAND" ColumnName="BRAND" />
+                <ScalarProperty Name="TYPE" ColumnName="TYPE" />
+                <ScalarProperty Name="YEARS_OF_BUY" ColumnName="YEARS_OF_BUY" />
+                <ScalarProperty Name="MARKET_PRICE" ColumnName="MARKET_PRICE" />
+                <ScalarProperty Name="CONDITION" ColumnName="CONDITION" />
+                <ScalarProperty Name="PICTURE" ColumnName="PICTURE" />
+                <ScalarProperty Name="TRANSACTION_ID" ColumnName="TRANSACTION_ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="GOLDs">
+            <EntityTypeMapping TypeName="PegadaianModel.GOLD">
+              <MappingFragment StoreEntitySet="GOLD">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="TYPE" ColumnName="TYPE" />
+                <ScalarProperty Name="UNIT" ColumnName="UNIT" />
+                <ScalarProperty Name="SELLING_PRICE" ColumnName="SELLING_PRICE" />
+                <ScalarProperty Name="PURCHASE_PRICE" ColumnName="PURCHASE_PRICE" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="GOLD_SAVING">
+            <EntityTypeMapping TypeName="PegadaianModel.GOLD_SAVING">
+              <MappingFragment StoreEntitySet="GOLD_SAVING">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="ACCOUNT_NUMBER" ColumnName="ACCOUNT_NUMBER" />
+                <ScalarProperty Name="BALANCE" ColumnName="BALANCE" />
+                <ScalarProperty Name="QUANTITY" ColumnName="QUANTITY" />
+                <ScalarProperty Name="PRICE" ColumnName="PRICE" />
+                <ScalarProperty Name="TRANSACTION_ID" ColumnName="TRANSACTION_ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="HANDPHONEs">
+            <EntityTypeMapping TypeName="PegadaianModel.HANDPHONE">
+              <MappingFragment StoreEntitySet="HANDPHONE">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="BRAND" ColumnName="BRAND" />
+                <ScalarProperty Name="TYPE" ColumnName="TYPE" />
+                <ScalarProperty Name="YEARS_OF_BUY" ColumnName="YEARS_OF_BUY" />
+                <ScalarProperty Name="SELLING_PRICE" ColumnName="SELLING_PRICE" />
+                <ScalarProperty Name="CONDITION" ColumnName="CONDITION" />
+                <ScalarProperty Name="PICTURE" ColumnName="PICTURE" />
+                <ScalarProperty Name="TRANSACTION_ID" ColumnName="TRANSACTION_ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="INSTALLMENTs">
+            <EntityTypeMapping TypeName="PegadaianModel.INSTALLMENT">
+              <MappingFragment StoreEntitySet="INSTALLMENT">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="INSTALLMENT_DATE" ColumnName="INSTALLMENT_DATE" />
+                <ScalarProperty Name="DUE_DATE" ColumnName="DUE_DATE" />
+                <ScalarProperty Name="AMOUNT" ColumnName="AMOUNT" />
+                <ScalarProperty Name="INSTALLMENT_AMOUNT" ColumnName="INSTALLMENT_AMOUNT" />
+                <ScalarProperty Name="TRANSACTION_ID" ColumnName="TRANSACTION_ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="INSTALLMENT_TYPE">
+            <EntityTypeMapping TypeName="PegadaianModel.INSTALLMENT_TYPE">
+              <MappingFragment StoreEntitySet="INSTALLMENT_TYPE">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="NAME" ColumnName="NAME" />
+                <ScalarProperty Name="DESCRIPTION" ColumnName="DESCRIPTION" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="JEWELRies">
+            <EntityTypeMapping TypeName="PegadaianModel.JEWELRY">
+              <MappingFragment StoreEntitySet="JEWELRY">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="LEVEL" ColumnName="LEVEL" />
+                <ScalarProperty Name="BRUTO" ColumnName="BRUTO" />
+                <ScalarProperty Name="NETTO" ColumnName="NETTO" />
+                <ScalarProperty Name="PICTURE" ColumnName="PICTURE" />
+                <ScalarProperty Name="TRANSACTION_ID" ColumnName="TRANSACTION_ID" />
+                <ScalarProperty Name="GOLD_ID" ColumnName="GOLD_ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="OUTLETs">
+            <EntityTypeMapping TypeName="PegadaianModel.OUTLET">
+              <MappingFragment StoreEntitySet="OUTLET">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="NAME" ColumnName="NAME" />
+                <ScalarProperty Name="PROVINCE" ColumnName="PROVINCE" />
+                <ScalarProperty Name="REGENCY" ColumnName="REGENCY" />
+                <ScalarProperty Name="SUB_DISTRICT" ColumnName="SUB_DISTRICT" />
+                <ScalarProperty Name="ADDRESS" ColumnName="ADDRESS" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="PRECIOUS_METAL">
+            <EntityTypeMapping TypeName="PegadaianModel.PRECIOUS_METAL">
+              <MappingFragment StoreEntitySet="PRECIOUS_METAL">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="WEIGHT" ColumnName="WEIGHT" />
+                <ScalarProperty Name="AMOUNT" ColumnName="AMOUNT" />
+                <ScalarProperty Name="PICTURE" ColumnName="PICTURE" />
+                <ScalarProperty Name="TRANSACTION_ID" ColumnName="TRANSACTION_ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="PRODUCTs">
+            <EntityTypeMapping TypeName="PegadaianModel.PRODUCT">
+              <MappingFragment StoreEntitySet="PRODUCT">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="NAME" ColumnName="NAME" />
+                <ScalarProperty Name="CATEGORY_ID" ColumnName="CATEGORY_ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="ROLEs">
+            <EntityTypeMapping TypeName="PegadaianModel.ROLE">
+              <MappingFragment StoreEntitySet="ROLE">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="NAME" ColumnName="NAME" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="sysdiagrams">
+            <EntityTypeMapping TypeName="PegadaianModel.sysdiagram">
+              <MappingFragment StoreEntitySet="sysdiagrams">
+                <ScalarProperty Name="name" ColumnName="name" />
+                <ScalarProperty Name="principal_id" ColumnName="principal_id" />
+                <ScalarProperty Name="diagram_id" ColumnName="diagram_id" />
+                <ScalarProperty Name="version" ColumnName="version" />
+                <ScalarProperty Name="definition" ColumnName="definition" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="TRANSACTIONs">
+            <EntityTypeMapping TypeName="PegadaianModel.TRANSACTION">
+              <MappingFragment StoreEntitySet="TRANSACTION">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="PRODUCT_ID" ColumnName="PRODUCT_ID" />
+                <ScalarProperty Name="INSTALLMENT_TYPE_ID" ColumnName="INSTALLMENT_TYPE_ID" />
+                <ScalarProperty Name="OUTLET_ID" ColumnName="OUTLET_ID" />
+                <ScalarProperty Name="TRANSACTIONS_DATE" ColumnName="TRANSACTIONS_DATE" />
+                <ScalarProperty Name="ADMINISTRATIVE_COST" ColumnName="ADMINISTRATIVE_COST" />
+                <ScalarProperty Name="approved_date" ColumnName="approved_date" />
+                <ScalarProperty Name="approved_status" ColumnName="approved_status" />
+                <ScalarProperty Name="accepted_date" ColumnName="accepted_date" />
+                <ScalarProperty Name="accepted_status" ColumnName="accepted_status" />
+                <ScalarProperty Name="remaining_amount" ColumnName="remaining_amount" />
+                <ScalarProperty Name="loan_amount" ColumnName="loan_amount" />
+                <ScalarProperty Name="user_id" ColumnName="user_id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="TYPE_BUSINESS_FINANCING">
+            <EntityTypeMapping TypeName="PegadaianModel.TYPE_BUSINESS_FINANCING">
+              <MappingFragment StoreEntitySet="TYPE_BUSINESS_FINANCING">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="CAPITAL_REQUIREMENT" ColumnName="CAPITAL_REQUIREMENT" />
+                <ScalarProperty Name="BUSINESS_TYPE" ColumnName="BUSINESS_TYPE" />
+                <ScalarProperty Name="TURNOVER" ColumnName="TURNOVER" />
+                <ScalarProperty Name="PROFIT" ColumnName="PROFIT" />
+                <ScalarProperty Name="TRANSACTION_ID" ColumnName="TRANSACTION_ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="TYPE_LAPTOP">
+            <EntityTypeMapping TypeName="PegadaianModel.TYPE_LAPTOP">
+              <MappingFragment StoreEntitySet="TYPE_LAPTOP">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="BRAND" ColumnName="BRAND" />
+                <ScalarProperty Name="TYPE" ColumnName="TYPE" />
+                <ScalarProperty Name="HARDDISK_CAPACITY" ColumnName="HARDDISK_CAPACITY" />
+                <ScalarProperty Name="YEARS_OF_BUY" ColumnName="YEARS_OF_BUY" />
+                <ScalarProperty Name="SELLING_PRICE" ColumnName="SELLING_PRICE" />
+                <ScalarProperty Name="DESCRIPTION" ColumnName="DESCRIPTION" />
+                <ScalarProperty Name="PICTURE" ColumnName="PICTURE" />
+                <ScalarProperty Name="TRANSACTION_ID" ColumnName="TRANSACTION_ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="TYPE_VEHICLE">
+            <EntityTypeMapping TypeName="PegadaianModel.TYPE_VEHICLE">
+              <MappingFragment StoreEntitySet="TYPE_VEHICLE">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="VEHICLE_TYPE" ColumnName="VEHICLE_TYPE" />
+                <ScalarProperty Name="BRAND" ColumnName="BRAND" />
+                <ScalarProperty Name="TYPE" ColumnName="TYPE" />
+                <ScalarProperty Name="CYLINDER" ColumnName="CYLINDER" />
+                <ScalarProperty Name="YEARS_OF_BUY" ColumnName="YEARS_OF_BUY" />
+                <ScalarProperty Name="MARKET_PRICE" ColumnName="MARKET_PRICE" />
+                <ScalarProperty Name="DESCRIPTION" ColumnName="DESCRIPTION" />
+                <ScalarProperty Name="TRANSACTION_ID" ColumnName="TRANSACTION_ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="USERs">
+            <EntityTypeMapping TypeName="PegadaianModel.USER">
+              <MappingFragment StoreEntitySet="USER">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="NAME" ColumnName="NAME" />
+                <ScalarProperty Name="IDENTITY_TYPE" ColumnName="IDENTITY_TYPE" />
+                <ScalarProperty Name="IDENTITY_NUMBER" ColumnName="IDENTITY_NUMBER" />
+                <ScalarProperty Name="GENDER" ColumnName="GENDER" />
+                <ScalarProperty Name="BORN_PLACE" ColumnName="BORN_PLACE" />
+                <ScalarProperty Name="BORN_DATE" ColumnName="BORN_DATE" />
+                <ScalarProperty Name="PROVINCE" ColumnName="PROVINCE" />
+                <ScalarProperty Name="REGENCY" ColumnName="REGENCY" />
+                <ScalarProperty Name="SUB_DISTRICT" ColumnName="SUB_DISTRICT" />
+                <ScalarProperty Name="ADDRESS" ColumnName="ADDRESS" />
+                <ScalarProperty Name="EMAIL" ColumnName="EMAIL" />
+                <ScalarProperty Name="USERNAME" ColumnName="USERNAME" />
+                <ScalarProperty Name="PASSWORD" ColumnName="PASSWORD" />
+                <ScalarProperty Name="BANK_ACCOUNT" ColumnName="BANK_ACCOUNT" />
+                <ScalarProperty Name="ROLE_ID" ColumnName="ROLE_ID" />
+                <ScalarProperty Name="NUMBER_NPWP" ColumnName="NUMBER_NPWP" />
+                <ScalarProperty Name="PICTURE_NPWP" ColumnName="PICTURE_NPWP" />
+                <ScalarProperty Name="PICTURE_IDENTITY" ColumnName="PICTURE_IDENTITY" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="true" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

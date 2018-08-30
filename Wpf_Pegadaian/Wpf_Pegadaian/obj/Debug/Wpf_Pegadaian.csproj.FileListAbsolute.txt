@@ -1,0 +1,45 @@
+C:\Users\Alhamda\AppData\Local\Temporary Projects\Wpf_Pegadaian\bin\Debug\Wpf_Pegadaian.exe.config
+C:\Users\Alhamda\AppData\Local\Temporary Projects\Wpf_Pegadaian\bin\Debug\Wpf_Pegadaian.exe
+C:\Users\Alhamda\AppData\Local\Temporary Projects\Wpf_Pegadaian\bin\Debug\Wpf_Pegadaian.pdb
+C:\Users\Alhamda\AppData\Local\Temporary Projects\Wpf_Pegadaian\obj\Debug\Wpf_Pegadaian.csprojResolveAssemblyReference.cache
+C:\Users\Alhamda\AppData\Local\Temporary Projects\Wpf_Pegadaian\obj\Debug\MainWindow.g.cs
+C:\Users\Alhamda\AppData\Local\Temporary Projects\Wpf_Pegadaian\obj\Debug\App.g.cs
+C:\Users\Alhamda\AppData\Local\Temporary Projects\Wpf_Pegadaian\obj\Debug\Wpf_Pegadaian_MarkupCompile.cache
+C:\Users\Alhamda\AppData\Local\Temporary Projects\Wpf_Pegadaian\obj\Debug\Wpf_Pegadaian_MarkupCompile.lref
+C:\Users\Alhamda\AppData\Local\Temporary Projects\Wpf_Pegadaian\obj\Debug\MainWindow.baml
+C:\Users\Alhamda\AppData\Local\Temporary Projects\Wpf_Pegadaian\obj\Debug\Wpf_Pegadaian.g.resources
+C:\Users\Alhamda\AppData\Local\Temporary Projects\Wpf_Pegadaian\obj\Debug\Wpf_Pegadaian.Properties.Resources.resources
+C:\Users\Alhamda\AppData\Local\Temporary Projects\Wpf_Pegadaian\obj\Debug\Wpf_Pegadaian.csproj.GenerateResource.Cache
+C:\Users\Alhamda\AppData\Local\Temporary Projects\Wpf_Pegadaian\obj\Debug\Wpf_Pegadaian.exe
+C:\Users\Alhamda\AppData\Local\Temporary Projects\Wpf_Pegadaian\obj\Debug\Wpf_Pegadaian.pdb
+E:\MII\Wpf_Pegadaian\Wpf_Pegadaian\bin\Debug\Wpf_Pegadaian.exe.config
+E:\MII\Wpf_Pegadaian\Wpf_Pegadaian\obj\Debug\Wpf_Pegadaian.exe
+E:\MII\Wpf_Pegadaian\Wpf_Pegadaian\obj\Debug\Wpf_Pegadaian.pdb
+E:\MII\Wpf_Pegadaian\Wpf_Pegadaian\bin\Debug\Wpf_Pegadaian.exe
+E:\MII\Wpf_Pegadaian\Wpf_Pegadaian\bin\Debug\Wpf_Pegadaian.pdb
+E:\MII\Wpf_Pegadaian\Wpf_Pegadaian\obj\Debug\Forms\golds.g.cs
+E:\MII\Wpf_Pegadaian\Wpf_Pegadaian\obj\Debug\MainWindow.g.cs
+E:\MII\Wpf_Pegadaian\Wpf_Pegadaian\obj\Debug\App.g.cs
+E:\MII\Wpf_Pegadaian\Wpf_Pegadaian\obj\Debug\Wpf_Pegadaian_MarkupCompile.cache
+E:\MII\Wpf_Pegadaian\Wpf_Pegadaian\obj\Debug\Wpf_Pegadaian_MarkupCompile.lref
+E:\MII\Wpf_Pegadaian\Wpf_Pegadaian\obj\Debug\Forms\golds.baml
+E:\MII\Wpf_Pegadaian\Wpf_Pegadaian\obj\Debug\MainWindow.baml
+E:\MII\Wpf_Pegadaian\Wpf_Pegadaian\obj\Debug\Wpf_Pegadaian.g.resources
+E:\MII\Wpf_Pegadaian\Wpf_Pegadaian\obj\Debug\Wpf_Pegadaian.Properties.Resources.resources
+E:\MII\Wpf_Pegadaian\Wpf_Pegadaian\obj\Debug\Wpf_Pegadaian.csproj.GenerateResource.Cache
+E:\MII\Wpf_Pegadaian\Wpf_Pegadaian\obj\Debug\Wpf_Pegadaian.csprojResolveAssemblyReference.cache
+E:\MII\Wpf_Pegadaian\Wpf_Pegadaian\obj\Debug\Forms\instal_types.g.cs
+E:\MII\Wpf_Pegadaian\Wpf_Pegadaian\obj\Debug\Forms\user.g.cs
+E:\MII\Wpf_Pegadaian\Wpf_Pegadaian\obj\Debug\Forms\instal_types.baml
+E:\MII\Wpf_Pegadaian\Wpf_Pegadaian\obj\Debug\Forms\user.baml
+E:\MII\Wpf_Pegadaian\Wpf_Pegadaian\obj\Debug\Forms\outlets.g.cs
+E:\MII\Wpf_Pegadaian\Wpf_Pegadaian\obj\Debug\Forms\outlets.baml
+E:\MII\Wpf_Pegadaian\Wpf_Pegadaian\bin\Debug\EntityFramework.dll
+E:\MII\Wpf_Pegadaian\Wpf_Pegadaian\bin\Debug\EntityFramework.SqlServer.dll
+E:\MII\Wpf_Pegadaian\Wpf_Pegadaian\bin\Debug\EntityFramework.xml
+E:\MII\Wpf_Pegadaian\Wpf_Pegadaian\bin\Debug\EntityFramework.SqlServer.xml
+E:\MII\Wpf_Pegadaian\Wpf_Pegadaian\obj\Debug\Forms\login.g.cs
+E:\MII\Wpf_Pegadaian\Wpf_Pegadaian\obj\Debug\Wpf_Pegadaian_Content.g.cs
+E:\MII\Wpf_Pegadaian\Wpf_Pegadaian\obj\Debug\Forms\login.baml
+E:\MII\Wpf_Pegadaian\Wpf_Pegadaian\obj\Debug\Forms\Home.g.cs
+E:\MII\Wpf_Pegadaian\Wpf_Pegadaian\obj\Debug\Forms\Home.baml

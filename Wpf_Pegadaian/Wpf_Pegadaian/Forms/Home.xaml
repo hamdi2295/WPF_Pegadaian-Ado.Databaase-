@@ -1,0 +1,62 @@
+﻿<Window x:Class="Wpf_Pegadaian.Forms.Home"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Wpf_Pegadaian.Forms"
+        mc:Ignorable="d"
+        Title="Home" Height="321" Width="873">
+    <Grid>
+        <TabControl Margin="-1,-1,1,1" SelectionChanged="TabControl_SelectionChanged">
+            <TabItem Header="User">
+                <Grid>
+
+                </Grid>
+            </TabItem>
+            <TabItem Header="Golds" Height="23" VerticalAlignment="Bottom">
+                <DockPanel>
+                    <DataGrid x:Name="dataGrid" Height="256" VerticalAlignment="Top">
+                        <DataGrid.Columns>
+                            <DataGridTextColumn Header="Id" Binding="{Binding id}"/>
+                            <DataGridTextColumn Header="Type" Binding="{Binding type}"/>
+                            <DataGridTextColumn Header="Unit" Binding="{Binding unit}"/>
+                            <DataGridTextColumn Header="Selling Price" Binding="{Binding selling_price}"/>
+                            <DataGridTextColumn Header="Purchase Price" Binding="{Binding purchase_price}"/>
+                            <DataGridTemplateColumn>
+                                <DataGridTemplateColumn.HeaderTemplate>
+                                    <DataTemplate>
+                                        <TextBlock Text="Action"/>
+                                    </DataTemplate>
+                                </DataGridTemplateColumn.HeaderTemplate>
+                                <DataGridTemplateColumn.CellTemplate>
+                                    <DataTemplate>
+                                        <StackPanel Orientation="Horizontal">
+                                            <Button x:Name="insertBtn" Content="Insert" Click="insertBtn_Click" />
+                                            <Button x:Name="updateBtn" Content="Update" />
+                                            <Button x:Name="deleteBtn" Content="Delete" />
+                                        </StackPanel>
+                                    </DataTemplate>
+                                </DataGridTemplateColumn.CellTemplate>
+                            </DataGridTemplateColumn>
+                        </DataGrid.Columns>
+                    </DataGrid>
+                </DockPanel>
+            </TabItem>
+            <TabItem Header="Outlets">
+                <Grid>
+                    <Label x:Name="label5" Content="IT" HorizontalAlignment="Left" Margin="37,26,0,0" VerticalAlignment="Top"/>
+                    <Label x:Name="label6" Content="ADDRESS" HorizontalAlignment="Left" Margin="37,176,0,0" VerticalAlignment="Top"/>
+                    <Label x:Name="label7" Content="SUB DISTRICT" HorizontalAlignment="Left" Margin="37,146,0,0" VerticalAlignment="Top"/>
+                    <Label x:Name="label8" Content="REGENCY" HorizontalAlignment="Left" Margin="37,116,0,0" VerticalAlignment="Top"/>
+                    <Label x:Name="label9" Content="PROVINCE" HorizontalAlignment="Left" Margin="37,86,0,0" VerticalAlignment="Top"/>
+                    <Label x:Name="labe20" Content="NAME" HorizontalAlignment="Left" Margin="37,56,0,0" VerticalAlignment="Top"/>
+
+                </Grid>
+            </TabItem>
+            <TabItem Header="Instal Type">
+                <Grid>
+                </Grid>
+            </TabItem>
+        </TabControl>
+    </Grid>
+</Window>

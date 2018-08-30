@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="pegadaianModelStoreContainer" CdmEntityContainer="pegadaianEntities1">
+    <EntitySetMapping Name="golds">
+      <EntityTypeMapping TypeName="pegadaianModel.gold">
+        <MappingFragment StoreEntitySet="golds">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="type" ColumnName="type" />
+          <ScalarProperty Name="unit" ColumnName="unit" />
+          <ScalarProperty Name="selling_price" ColumnName="selling_price" />
+          <ScalarProperty Name="purchase_price" ColumnName="purchase_price" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
