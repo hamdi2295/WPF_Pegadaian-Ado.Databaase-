@@ -1,4 +1,5 @@
 ﻿using System;
+using Wpf_Pegadaian.Models;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -19,25 +20,31 @@ namespace Wpf_Pegadaian.Forms
     /// </summary>
     public partial class golds : Window
     {
-        Models.pegadaianEntities2 _db = new Models.pegadaianEntities2();
+        PegadaianEntities db = new PegadaianEntities();
         
         public golds()
         {
             InitializeComponent();
+   
         }
 
+       
         private void button_Copy2_Click(object sender, RoutedEventArgs e)
         {
-            Models.GOLD newgold = new Models.GOLD()
+            GOLD emas = new GOLD()
             {
                 TYPE = ttype.Text,
-                UNIT = tunit.Text
-                
+                UNIT = tunit.Text,
+                SELLING_PRICE = Convert.ToInt32(tselling.Text),
+                PURCHASE_PRICE = Convert.ToInt32(tpurchase.Text)
             };
-            _db.GOLDs.Add(newgold);
-            _db.SaveChanges();
+            db.GOLDs.Add(emas);
+            db.SaveChanges();
+            Home.datagrid.ItemsSource = db.GOLDs.ToList();
+            this.Hide();
 
         }
         
+       
     }
 }

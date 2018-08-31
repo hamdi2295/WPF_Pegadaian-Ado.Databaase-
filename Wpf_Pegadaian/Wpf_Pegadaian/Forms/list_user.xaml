@@ -1,0 +1,46 @@
+﻿<Window x:Class="Wpf_Pegadaian.Forms.list_user"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Wpf_Pegadaian.Forms"
+        mc:Ignorable="d"
+        Title="list_user" Height="300" Width="296">
+    <Grid>
+        <TabControl >
+            <TabItem Header="Kelola User">
+                <Grid>
+
+                    <DockPanel Margin="-3,0,0,0">
+                        <DataGrid AutoGenerateColumns="False" x:Name="DataGridUser" Height="216" VerticalAlignment="Top" Margin="0,31,0,-9" Width="290" SelectionChanged="DataGridUser_SelectionChanged">
+                            <DataGrid.Columns>
+                                <DataGridTextColumn Header="NAME" Binding="{Binding NAME}"/>
+                                <DataGridTextColumn Header="ID" Binding="{Binding ID}"/>
+                                <DataGridTextColumn Header="USERNAME" Binding="{Binding USERNAME}"/>
+                                <DataGridTemplateColumn>
+                                    <DataGridTemplateColumn.HeaderTemplate>
+                                        <DataTemplate>
+                                            <TextBlock Text="Action"/>
+                                        </DataTemplate>
+                                    </DataGridTemplateColumn.HeaderTemplate>
+                                    <DataGridTemplateColumn.CellTemplate>
+                                        <DataTemplate>
+                                            <StackPanel Orientation="Horizontal">
+                                                <Button x:Name="updateuserBtn" Content="Update" Click="updateuserBtn_Click"/>
+                                                <Button x:Name="deleteuserBtn" Content="Delete" Click="deleteuserBtn_Click"/>
+                                            </StackPanel>
+                                        </DataTemplate>
+                                    </DataGridTemplateColumn.CellTemplate>
+                                </DataGridTemplateColumn>
+                            </DataGrid.Columns>
+                        </DataGrid>
+                    </DockPanel>
+                    <Button x:Name="adduser" Content="ADD" HorizontalAlignment="Left" Margin="487,3,0,0" VerticalAlignment="Top" Width="75" Click="button_Click"/>
+                </Grid>
+            </TabItem>
+
+
+        </TabControl>
+
+    </Grid>
+</Window>

@@ -1,0 +1,75 @@
+﻿<Window x:Class="Wpf_Pegadaian.Forms.list_barang"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Wpf_Pegadaian.Forms"
+        mc:Ignorable="d"
+        Title="list_barang" Height="439.382" Width="1108.456" WindowStartupLocation="CenterScreen">
+    <Grid Margin="0,0,2,0">
+        <Grid.Background>
+            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                <GradientStop Color="#FF086C08" Offset="0"/>
+                <GradientStop Color="#FF64FF2A" Offset="1"/>
+            </LinearGradientBrush>
+        </Grid.Background>
+        <TabControl Margin="0,0,500,0" >
+            <TabItem Header="Data Handphone">
+                <Grid>
+                    <DockPanel Margin="-3,0,0,0">
+                        <DataGrid AutoGenerateColumns="False" x:Name="DataGridHandphone" Width="603">
+                            <DataGrid.Columns>
+                                <DataGridTextColumn Header="ID" Binding="{Binding ID}"/>
+                                <DataGridTextColumn Header="BRAND" Binding="{Binding BRAND}"/>
+                                <DataGridTextColumn Header="TYPE" Binding="{Binding TYPE}"/>
+                                <DataGridTextColumn Header="YEARS OF BUY" Binding="{Binding YEARS OF BUY}"/>
+                                <DataGridTextColumn Header="SELLING PRICE" Binding="{Binding SELLING_PRICE}"/>
+                                <DataGridTextColumn Header="CONDITION" Binding="{Binding CONDITION}"/>
+                                <DataGridTextColumn Header="PICTURE" Binding="{Binding PICTURE}"/>
+                                <DataGridTextColumn Header="TRANSACTION ID" Binding="{Binding TRANSACTION_ID}"/>
+                                <DataGridTemplateColumn>
+                                    <DataGridTemplateColumn.HeaderTemplate>
+                                        <DataTemplate>
+                                            <TextBlock Text="Action"/>
+                                        </DataTemplate>
+                                    </DataGridTemplateColumn.HeaderTemplate>
+                                    <DataGridTemplateColumn.CellTemplate>
+                                        <DataTemplate>
+                                            <StackPanel Orientation="Horizontal">
+                                                <Button x:Name="deletehpBtn" Content="Delete" />
+                                            </StackPanel>
+                                        </DataTemplate>
+                                    </DataGridTemplateColumn.CellTemplate>
+                                </DataGridTemplateColumn>
+                            </DataGrid.Columns>
+                        </DataGrid>
+                    </DockPanel>
+
+                    <DockPanel>
+                        
+                    </DockPanel>
+                </Grid>
+            </TabItem>
+
+
+        </TabControl>
+        <Label x:Name="label" Content="BRAND" HorizontalAlignment="Left" Margin="631,39,0,0" VerticalAlignment="Top" Width="178" Height="31" FontFamily="Modern No. 20" FontSize="14.667"/>
+        <Label x:Name="label_Copy" Content="TRANSACTION ID" HorizontalAlignment="Left" Margin="631,292,0,0" VerticalAlignment="Top" Height="34" Width="171" FontFamily="Modern No. 20" FontSize="14.667"/>
+        <Label x:Name="label_Copy1" Content="PICTURE" HorizontalAlignment="Left" Margin="631,250,0,0" VerticalAlignment="Top" Height="34" Width="176" FontFamily="Modern No. 20" FontSize="14.667"/>
+        <Label x:Name="label_Copy2" Content="CONDITION" HorizontalAlignment="Left" Margin="631,206,0,0" VerticalAlignment="Top" Height="34" Width="171" FontFamily="Modern No. 20" FontSize="14.667"/>
+        <Label x:Name="label_Copy3" Content="SELLING PRICE" HorizontalAlignment="Left" Margin="631,164,0,0" VerticalAlignment="Top" Height="34" Width="173" FontFamily="Modern No. 20" FontSize="14.667"/>
+        <Label x:Name="label_Copy4" Content="YEARS OF BUY" HorizontalAlignment="Left" Margin="631,121,0,0" VerticalAlignment="Top" Height="34" Width="173" FontFamily="Modern No. 20" FontSize="14.667"/>
+        <Label x:Name="label_Copy5" Content="TYPE" HorizontalAlignment="Left" Margin="631,80,0,0" VerticalAlignment="Top" Height="34" Width="178" FontFamily="Modern No. 20" FontSize="14.667"/>
+        <TextBox x:Name="textBox" HorizontalAlignment="Left" Height="34" Margin="807,292,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="172"/>
+        <TextBox x:Name="textBox_Copy" HorizontalAlignment="Left" Height="34" Margin="807,250,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="172"/>
+        <TextBox x:Name="textBox_Copy1" HorizontalAlignment="Left" Height="34" Margin="807,206,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="172"/>
+        <TextBox x:Name="textBox_Copy2" HorizontalAlignment="Left" Height="34" Margin="807,164,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="172"/>
+        <TextBox x:Name="textBox_Copy3" HorizontalAlignment="Left" Height="34" Margin="808,121,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="172"/>
+        <TextBox x:Name="textBox_Copy4" HorizontalAlignment="Left" Height="34" Margin="809,80,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="172"/>
+        <TextBox x:Name="textBox_Copy5" HorizontalAlignment="Left" Height="34" Margin="809,36,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="172"/>
+        <Button x:Name="HPSAVE" Content="SAVE" HorizontalAlignment="Left" Margin="800,354,0,0" VerticalAlignment="Top" Width="84" Height="33" Foreground="White" BorderBrush="#FF5B3838" Background="#FF134B83" FontSize="16" FontWeight="Bold"/>
+        <Button x:Name="HPEDIT" Content="EDIT" HorizontalAlignment="Left" Margin="913,353,0,0" VerticalAlignment="Top" Width="84" Height="33" Foreground="White" BorderBrush="#FF5B3838" Background="#FFDE510F" FontSize="16" FontWeight="Bold"/>
+
+
+    </Grid>
+</Window>

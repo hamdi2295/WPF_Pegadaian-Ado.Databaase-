@@ -69,6 +69,10 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Page Include="Forms\category.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Forms\golds.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -81,7 +85,27 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Forms\list_electronics.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Forms\list_goldsaving.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Forms\list_handphone.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Forms\list_user.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Forms\login.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Forms\Menu.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -89,7 +113,15 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Forms\update_golds.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Forms\user.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Forms\list_logammulia.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -101,6 +133,9 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="Forms\category.xaml.cs">
+      <DependentUpon>category.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Forms\golds.xaml.cs">
       <DependentUpon>golds.xaml</DependentUpon>
     </Compile>
@@ -110,14 +145,35 @@
     <Compile Include="Forms\instal_types.xaml.cs">
       <DependentUpon>instal_types.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Forms\list_electronics.xaml.cs">
+      <DependentUpon>list_electronics.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\list_goldsaving.xaml.cs">
+      <DependentUpon>list_goldsaving.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\list_handphone.xaml.cs">
+      <DependentUpon>list_handphone.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\list_user.xaml.cs">
+      <DependentUpon>list_user.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Forms\login.xaml.cs">
       <DependentUpon>login.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Menu.xaml.cs">
+      <DependentUpon>Menu.xaml</DependentUpon>
     </Compile>
     <Compile Include="Forms\outlets.xaml.cs">
       <DependentUpon>outlets.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Forms\update_golds.xaml.cs">
+      <DependentUpon>update_golds.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Forms\user.xaml.cs">
       <DependentUpon>user.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\list_logammulia.xaml.cs">
+      <DependentUpon>list_logammulia.xaml</DependentUpon>
     </Compile>
     <Compile Include="MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
@@ -126,79 +182,79 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Models\CATEGORY.cs">
-      <DependentUpon>ModelPegadaian.tt</DependentUpon>
+      <DependentUpon>Model111.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\DETAIL_BUSINESS.cs">
-      <DependentUpon>ModelPegadaian.tt</DependentUpon>
+      <DependentUpon>Model111.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\DETAIL_TYPE_VEHICLE.cs">
-      <DependentUpon>ModelPegadaian.tt</DependentUpon>
+      <DependentUpon>Model111.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\ELECTRONIC.cs">
-      <DependentUpon>ModelPegadaian.tt</DependentUpon>
+      <DependentUpon>Model111.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\GOLD.cs">
-      <DependentUpon>ModelPegadaian.tt</DependentUpon>
+      <DependentUpon>Model111.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\GOLD_SAVING.cs">
-      <DependentUpon>ModelPegadaian.tt</DependentUpon>
+      <DependentUpon>Model111.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\HANDPHONE.cs">
-      <DependentUpon>ModelPegadaian.tt</DependentUpon>
+      <DependentUpon>Model111.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\INSTALLMENT.cs">
-      <DependentUpon>ModelPegadaian.tt</DependentUpon>
+      <DependentUpon>Model111.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\INSTALLMENT_TYPE.cs">
-      <DependentUpon>ModelPegadaian.tt</DependentUpon>
+      <DependentUpon>Model111.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\JEWELRY.cs">
-      <DependentUpon>ModelPegadaian.tt</DependentUpon>
+      <DependentUpon>Model111.tt</DependentUpon>
     </Compile>
-    <Compile Include="Models\ModelPegadaian.Context.cs">
+    <Compile Include="Models\Model111.Context.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>ModelPegadaian.Context.tt</DependentUpon>
+      <DependentUpon>Model111.Context.tt</DependentUpon>
     </Compile>
-    <Compile Include="Models\ModelPegadaian.cs">
+    <Compile Include="Models\Model111.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>ModelPegadaian.tt</DependentUpon>
+      <DependentUpon>Model111.tt</DependentUpon>
     </Compile>
-    <Compile Include="Models\ModelPegadaian.Designer.cs">
+    <Compile Include="Models\Model111.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>ModelPegadaian.edmx</DependentUpon>
+      <DependentUpon>Model111.edmx</DependentUpon>
     </Compile>
     <Compile Include="Models\OUTLET.cs">
-      <DependentUpon>ModelPegadaian.tt</DependentUpon>
+      <DependentUpon>Model111.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\PRECIOUS_METAL.cs">
-      <DependentUpon>ModelPegadaian.tt</DependentUpon>
+      <DependentUpon>Model111.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\PRODUCT.cs">
-      <DependentUpon>ModelPegadaian.tt</DependentUpon>
+      <DependentUpon>Model111.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\ROLE.cs">
-      <DependentUpon>ModelPegadaian.tt</DependentUpon>
+      <DependentUpon>Model111.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\sysdiagram.cs">
-      <DependentUpon>ModelPegadaian.tt</DependentUpon>
+      <DependentUpon>Model111.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\TRANSACTION.cs">
-      <DependentUpon>ModelPegadaian.tt</DependentUpon>
+      <DependentUpon>Model111.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\TYPE_BUSINESS_FINANCING.cs">
-      <DependentUpon>ModelPegadaian.tt</DependentUpon>
+      <DependentUpon>Model111.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\TYPE_LAPTOP.cs">
-      <DependentUpon>ModelPegadaian.tt</DependentUpon>
+      <DependentUpon>Model111.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\TYPE_VEHICLE.cs">
-      <DependentUpon>ModelPegadaian.tt</DependentUpon>
+      <DependentUpon>Model111.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\USER.cs">
-      <DependentUpon>ModelPegadaian.tt</DependentUpon>
+      <DependentUpon>Model111.tt</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
@@ -217,12 +273,12 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <EntityDeploy Include="Models\ModelPegadaian.edmx">
+    <EntityDeploy Include="Models\Model111.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
-      <LastGenOutput>ModelPegadaian.Designer.cs</LastGenOutput>
+      <LastGenOutput>Model111.Designer.cs</LastGenOutput>
     </EntityDeploy>
-    <None Include="Models\ModelPegadaian.edmx.diagram">
-      <DependentUpon>ModelPegadaian.edmx</DependentUpon>
+    <None Include="Models\Model111.edmx.diagram">
+      <DependentUpon>Model111.edmx</DependentUpon>
     </None>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
@@ -241,15 +297,15 @@
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Models\ModelPegadaian.Context.tt">
+    <Content Include="Models\Model111.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>ModelPegadaian.edmx</DependentUpon>
-      <LastGenOutput>ModelPegadaian.Context.cs</LastGenOutput>
+      <DependentUpon>Model111.edmx</DependentUpon>
+      <LastGenOutput>Model111.Context.cs</LastGenOutput>
     </Content>
-    <Content Include="Models\ModelPegadaian.tt">
+    <Content Include="Models\Model111.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>ModelPegadaian.edmx</DependentUpon>
-      <LastGenOutput>ModelPegadaian.cs</LastGenOutput>
+      <DependentUpon>Model111.edmx</DependentUpon>
+      <LastGenOutput>Model111.cs</LastGenOutput>
     </Content>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

@@ -15,7 +15,7 @@
             </TabItem>
             <TabItem Header="Golds" Height="23" VerticalAlignment="Bottom">
                 <DockPanel>
-                    <DataGrid x:Name="dataGrid" Height="256" VerticalAlignment="Top">
+                    <DataGrid x:Name="MydataGrid" Height="256" VerticalAlignment="Top">
                         <DataGrid.Columns>
                             <DataGridTextColumn Header="Id" Binding="{Binding id}"/>
                             <DataGridTextColumn Header="Type" Binding="{Binding type}"/>
@@ -32,8 +32,8 @@
                                     <DataTemplate>
                                         <StackPanel Orientation="Horizontal">
                                             <Button x:Name="insertBtn" Content="Insert" Click="insertBtn_Click" />
-                                            <Button x:Name="updateBtn" Content="Update" />
-                                            <Button x:Name="deleteBtn" Content="Delete" />
+                                            <Button x:Name="updateBtn" Content="Update" Click="updateBtn_Click" />
+                                            <Button x:Name="deleteBtn" Content="Delete" Click="deleteBtn_Click" />
                                         </StackPanel>
                                     </DataTemplate>
                                 </DataGridTemplateColumn.CellTemplate>

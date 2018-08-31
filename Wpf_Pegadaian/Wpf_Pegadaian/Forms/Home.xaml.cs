@@ -21,8 +21,8 @@ namespace Wpf_Pegadaian.Forms
     /// </summary>
     public partial class Home : Window
     {
-        pegadaianEntities1 _db = new pegadaianEntities1();
-        public static DataGrid datagrid;
+        PegadaianEntities _db = new PegadaianEntities();
+        public static DataGrid datagrid;  
 
         public Home()
         {
@@ -31,8 +31,9 @@ namespace Wpf_Pegadaian.Forms
         }
         private void Load()
         {
-            dataGrid.ItemsSource = _db.golds.ToList();
-            datagrid = dataGrid;
+            MydataGrid.ItemsSource = _db.GOLDs.ToList();
+            datagrid = MydataGrid;
+            
         }
 
         private void TabControl_SelectionChanged(object sender, SelectionChangedEventArgs e)
@@ -42,7 +43,26 @@ namespace Wpf_Pegadaian.Forms
 
         private void insertBtn_Click(object sender, RoutedEventArgs e)
         {
-           
+            golds gg = new golds();
+            gg.ShowDialog();
+        }
+
+        private void updateBtn_Click(object sender, RoutedEventArgs e)
+        {
+            int id = (MydataGrid.SelectedItem as GOLD).ID;
+            update_golds update = new update_golds(id);
+
+
+            update.ShowDialog();
+        }
+
+        private void deleteBtn_Click(object sender, RoutedEventArgs e)
+        {
+            int id = (MydataGrid.SelectedItem as GOLD).ID;
+            var deletegold = _db.GOLDs.Where(m => m.ID == id).Single();
+            _db.GOLDs.Remove(deletegold);
+            _db.SaveChanges();
+            MydataGrid.ItemsSource = _db.GOLDs.ToList();
         }
     }
 }

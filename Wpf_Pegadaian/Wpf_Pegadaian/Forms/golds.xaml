@@ -5,23 +5,19 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Wpf_Pegadaian.Forms"
         mc:Ignorable="d"
-        Title="golds" Height="368" Width="997" WindowStartupLocation="CenterScreen">
-    <Grid>
-        <Label x:Name="label" Content="ID" HorizontalAlignment="Left" Margin="47,42,0,0" VerticalAlignment="Top"/>
+        Title="golds" Height="368" Width="473" WindowStartupLocation="CenterScreen">
+    <Grid Margin="0,0,2,0">
         <Label x:Name="label_Copy" Content="PURCHASE PRICE" HorizontalAlignment="Left" Margin="47,202,0,0" VerticalAlignment="Top"/>
         <Label x:Name="label_Copy1" Content="SELLING PRICE" HorizontalAlignment="Left" Margin="47,162,0,0" VerticalAlignment="Top"/>
         <Label x:Name="label_Copy2" Content="UNIT" HorizontalAlignment="Left" Margin="47,122,0,0" VerticalAlignment="Top"/>
         <Label x:Name="label_Copy3" Content="TYPE" HorizontalAlignment="Left" Margin="47,82,0,0" VerticalAlignment="Top"/>
-        <TextBox HorizontalAlignment="Left" Height="23" Margin="216,43,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="187"/>
         <TextBox x:Name="tpurchase" HorizontalAlignment="Left" Height="23" Margin="216,204,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="187"/>
         <TextBox x:Name="tselling" HorizontalAlignment="Left" Height="23" Margin="216,165,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="187"/>
         <TextBox x:Name="tunit" HorizontalAlignment="Left" Height="23" Margin="216,124,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="187"/>
         <TextBox x:Name="ttype" HorizontalAlignment="Left" Height="23" Margin="216,84,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="187"/>
-        <Button x:Name="button" Content="UPDATE" HorizontalAlignment="Left" Margin="149,288,0,0" VerticalAlignment="Top" Width="75"/>
-        <Button x:Name="button_Copy" Content="EXIT" HorizontalAlignment="Left" Margin="349,288,0,0" VerticalAlignment="Top" Width="75"/>
-        <Button x:Name="button_Copy1" Content="DELETE" HorizontalAlignment="Left" Margin="248,288,0,0" VerticalAlignment="Top" Width="75"/>
-        <Button x:Name="button_Copy2" Content="SAVE" HorizontalAlignment="Left" Margin="56,288,0,0" VerticalAlignment="Top" Width="75" Click="button_Copy2_Click"/>
-        <DataGrid x:Name="dataGrid" HorizontalAlignment="Left" Margin="470,64,0,0" VerticalAlignment="Top" Height="222" Width="486"/>
+        <Button x:Name="button_Copy2" Content="SAVE" HorizontalAlignment="Left" Margin="202,263,0,0" VerticalAlignment="Top" Width="75" Click="button_Copy2_Click"/>
+        <Label x:Name="label_Copy4" Content="ID" HorizontalAlignment="Left" Margin="47,32,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="tid" HorizontalAlignment="Left" Height="23" Margin="216,35,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="187"/>
 
     </Grid>
 </Window>

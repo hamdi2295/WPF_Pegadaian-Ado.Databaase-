@@ -41,6 +41,7 @@ namespace Wpf_Pegadaian.Models
         public Nullable<decimal> remaining_amount { get; set; }
         public Nullable<decimal> loan_amount { get; set; }
         public int user_id { get; set; }
+        public string transaction_no { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<ELECTRONIC> ELECTRONICs { get; set; }

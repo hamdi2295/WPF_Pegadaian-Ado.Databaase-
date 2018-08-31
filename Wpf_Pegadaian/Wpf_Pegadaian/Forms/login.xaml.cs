@@ -26,7 +26,7 @@ namespace Wpf_Pegadaian.Forms
 
         private void button_Click(object sender, RoutedEventArgs e)
         {
-
+            
         }
     }
 }

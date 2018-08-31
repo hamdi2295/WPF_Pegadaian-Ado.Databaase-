@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="0ec1f20fd07e4ed1854366951e8237c0" Name="Diagram1">
+        <EntityTypeShape EntityType="PegadaianModel.CATEGORY" Width="1.5" PointX="0.75" PointY="17" IsExpanded="true" />
+        <EntityTypeShape EntityType="PegadaianModel.DETAIL_BUSINESS" Width="1.5" PointX="9.75" PointY="24.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="PegadaianModel.DETAIL_TYPE_VEHICLE" Width="1.5" PointX="9.75" PointY="31.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="PegadaianModel.ELECTRONIC" Width="1.5" PointX="7.5" PointY="4.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="PegadaianModel.GOLD" Width="1.5" PointX="8.25" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="PegadaianModel.GOLD_SAVING" Width="1.5" PointX="7.5" PointY="8.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="PegadaianModel.HANDPHONE" Width="1.5" PointX="7.5" PointY="11.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="PegadaianModel.INSTALLMENT" Width="1.5" PointX="7.5" PointY="14.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="PegadaianModel.INSTALLMENT_TYPE" Width="1.5" PointX="3" PointY="12.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="PegadaianModel.JEWELRY" Width="1.5" PointX="10.5" PointY="16.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="PegadaianModel.OUTLET" Width="1.5" PointX="3" PointY="20" IsExpanded="true" />
+        <EntityTypeShape EntityType="PegadaianModel.PRECIOUS_METAL" Width="1.5" PointX="7.5" PointY="21.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="PegadaianModel.PRODUCT" Width="1.5" PointX="3" PointY="16.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="PegadaianModel.ROLE" Width="1.5" PointX="0.75" PointY="24.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="PegadaianModel.sysdiagram" Width="1.5" PointX="0.75" PointY="1.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="PegadaianModel.TRANSACTION" Width="1.5" PointX="5.25" PointY="14.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="PegadaianModel.TYPE_BUSINESS_FINANCING" Width="1.5" PointX="7.5" PointY="24.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="PegadaianModel.TYPE_LAPTOP" Width="1.5" PointX="7.5" PointY="27.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="PegadaianModel.TYPE_VEHICLE" Width="1.5" PointX="7.5" PointY="31.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="PegadaianModel.USER" Width="1.5" PointX="3" PointY="23.125" IsExpanded="true" />
+        <AssociationConnector Association="PegadaianModel.FK_PRODUCTS" ManuallyRouted="false" />
+        <AssociationConnector Association="PegadaianModel.FK_DETAIL_TYPE" ManuallyRouted="false" />
+        <AssociationConnector Association="PegadaianModel.FK_DETAIL_VEHICLE" ManuallyRouted="false" />
+        <AssociationConnector Association="PegadaianModel.FK_ELECTRONIC_TRANSACTION" ManuallyRouted="false" />
+        <AssociationConnector Association="PegadaianModel.FK_DETAIL_JEWELRY_GOLD" ManuallyRouted="false" />
+        <AssociationConnector Association="PegadaianModel.FK_GOLD_TRANSACTION" ManuallyRouted="false" />
+        <AssociationConnector Association="PegadaianModel.FK_HANDPHONE_TRANSACTION" ManuallyRouted="false" />
+        <AssociationConnector Association="PegadaianModel.FK_INSTALLMENT_TRANSACTION" ManuallyRouted="false" />
+        <AssociationConnector Association="PegadaianModel.FK_TRANSACTION_INSTALLMENT_TYPE" ManuallyRouted="false" />
+        <AssociationConnector Association="PegadaianModel.FK_DETAIL_JEWELRY_TRANSACTION" ManuallyRouted="false" />
+        <AssociationConnector Association="PegadaianModel.FK_TRANSACTION_OUTLET" ManuallyRouted="false" />
+        <AssociationConnector Association="PegadaianModel.FK_PRECIOUS_METAL_TRANSACTION" ManuallyRouted="false" />
+        <AssociationConnector Association="PegadaianModel.FK_TRANSACTION_PRODUCT" ManuallyRouted="false" />
+        <AssociationConnector Association="PegadaianModel.FK__USER__ROLE_ID__1CF15040" ManuallyRouted="false" />
+        <AssociationConnector Association="PegadaianModel.FK_BUSINESS_TRANSACTION" ManuallyRouted="false" />
+        <AssociationConnector Association="PegadaianModel.FK_LAPTOP_TRANSACTION" ManuallyRouted="false" />
+        <AssociationConnector Association="PegadaianModel.FK_TRANSACTION_USER" ManuallyRouted="false" />
+        <AssociationConnector Association="PegadaianModel.FK_VEHICLE_TRANSACTION" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

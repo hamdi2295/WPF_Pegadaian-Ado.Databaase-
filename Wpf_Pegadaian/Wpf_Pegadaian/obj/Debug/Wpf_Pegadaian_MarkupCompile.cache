@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-E:\MII\Wpf_Pegadaian\Wpf_Pegadaian\obj\Debug\
+G:\Wpf_Pegadaian\Wpf_Pegadaian\obj\Debug\
 Wpf_Pegadaian
 none
 false
 DEBUG;TRACE
-E:\MII\Wpf_Pegadaian\Wpf_Pegadaian\App.xaml
-71937363980
-2-177108596
-15-33590066
-18129819908
-Forms\golds.xaml;Forms\Home.xaml;Forms\instal_types.xaml;Forms\login.xaml;Forms\outlets.xaml;Forms\user.xaml;MainWindow.xaml;
+G:\Wpf_Pegadaian\Wpf_Pegadaian\App.xaml
+15-618144612
+22135078788
+422104449278
+18-1540812028
+Forms\category.xaml;Forms\golds.xaml;Forms\Home.xaml;Forms\instal_types.xaml;Forms\list_electronics.xaml;Forms\list_goldsaving.xaml;Forms\list_handphone.xaml;Forms\list_user.xaml;Forms\login.xaml;Forms\Menu.xaml;Forms\outlets.xaml;Forms\update_golds.xaml;Forms\user.xaml;Forms\list_logammulia.xaml;MainWindow.xaml;
 
-False
+True
 

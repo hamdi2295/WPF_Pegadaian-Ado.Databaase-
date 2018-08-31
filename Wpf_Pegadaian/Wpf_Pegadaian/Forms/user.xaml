@@ -5,52 +5,45 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Wpf_Pegadaian.Forms"
         mc:Ignorable="d"
-        Title="user" Height="754" Width="1111">
+        Title="user" Height="710" Width="457">
     <Grid>
-        <Label x:Name="label" Content="ID" HorizontalAlignment="Left" Margin="10,51,0,0" VerticalAlignment="Top"/>
-        <Label x:Name="label_Copy" Content="USERNAME" HorizontalAlignment="Left" Margin="10,456,0,0" VerticalAlignment="Top"/>
-        <Label x:Name="label_Copy1" Content="PASSWORD" HorizontalAlignment="Left" Margin="10,492,0,0" VerticalAlignment="Top"/>
-        <Label x:Name="label_Copy2" Content="EMAIL" HorizontalAlignment="Left" Margin="10,422,0,0" VerticalAlignment="Top"/>
-        <Label x:Name="label_Copy3" Content="BANK ACCOUNT" HorizontalAlignment="Left" Margin="10,526,0,0" VerticalAlignment="Top"/>
-        <Label x:Name="label_Copy4" Content="PICTURE NPWP" HorizontalAlignment="Left" Margin="10,629,0,0" VerticalAlignment="Top"/>
-        <Label x:Name="label_Copy5" Content="ROLES" HorizontalAlignment="Left" Margin="10,560,0,0" VerticalAlignment="Top"/>
-        <Label x:Name="label_Copy6" Content="NPWP NUMBER" HorizontalAlignment="Left" Margin="10,594,0,0" VerticalAlignment="Top"/>
-        <Label x:Name="label_Copy7" Content="PICTURE IDENTITY" HorizontalAlignment="Left" Margin="10,663,0,0" VerticalAlignment="Top"/>
-        <Label x:Name="label_Copy8" Content="ADDRESS" HorizontalAlignment="Left" Margin="10,388,0,0" VerticalAlignment="Top"/>
-        <Label x:Name="label_Copy9" Content="SUB-DISTRICT" HorizontalAlignment="Left" Margin="10,355,0,0" VerticalAlignment="Top"/>
-        <Label x:Name="label_Copy10" Content="REGENCY" HorizontalAlignment="Left" Margin="10,321,0,0" VerticalAlignment="Top"/>
-        <Label x:Name="label_Copy11" Content="PROVINCE" HorizontalAlignment="Left" Margin="10,288,0,0" VerticalAlignment="Top"/>
-        <Label x:Name="label_Copy12" Content="BORN DATE" HorizontalAlignment="Left" Margin="10,254,0,0" VerticalAlignment="Top"/>
-        <Label x:Name="label_Copy13" Content="BORN PLACE" HorizontalAlignment="Left" Margin="10,221,0,0" VerticalAlignment="Top"/>
-        <Label x:Name="label_Copy14" Content="GENDER" HorizontalAlignment="Left" Margin="10,188,0,0" VerticalAlignment="Top"/>
-        <Label x:Name="label_Copy15" Content="IDENTITY ID" HorizontalAlignment="Left" Margin="10,155,0,0" VerticalAlignment="Top"/>
-        <Label x:Name="label_Copy16" Content="IDENTITY TYPE" HorizontalAlignment="Left" Margin="10,121,0,0" VerticalAlignment="Top"/>
-        <Label x:Name="label_Copy17" Content="NAME" HorizontalAlignment="Left" Margin="10,86,0,0" VerticalAlignment="Top"/>
-        <TextBox x:Name="textBox" HorizontalAlignment="Left" Height="23" Margin="182,54,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="215"/>
-        <TextBox x:Name="textBox_Copy" HorizontalAlignment="Left" Height="23" Margin="180,224,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="215"/>
-        <TextBox x:Name="textBox_Copy1" HorizontalAlignment="Left" Height="23" Margin="182,357,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="215"/>
-        <TextBox x:Name="textBox_Copy2" HorizontalAlignment="Left" Height="23" Margin="182,323,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="215"/>
-        <TextBox x:Name="textBox_Copy3" HorizontalAlignment="Left" Height="23" Margin="182,291,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="215"/>
-        <TextBox x:Name="textBox_Copy5" HorizontalAlignment="Left" Height="23" Margin="182,88,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="215"/>
-        <TextBox x:Name="textBox_Copy6" HorizontalAlignment="Left" Height="23" Margin="182,158,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="215"/>
-        <TextBox x:Name="textBox_Copy8" HorizontalAlignment="Left" Height="23" Margin="182,123,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="215"/>
-        <TextBox x:Name="textBox_Copy9" HorizontalAlignment="Left" Height="23" Margin="182,667,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="215"/>
-        <TextBox x:Name="textBox_Copy10" HorizontalAlignment="Left" Height="23" Margin="182,632,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="215"/>
-        <TextBox x:Name="textBox_Copy11" HorizontalAlignment="Left" Height="23" Margin="182,596,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="215"/>
-        <TextBox x:Name="textBox_Copy12" HorizontalAlignment="Left" Height="23" Margin="182,561,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="215"/>
-        <TextBox x:Name="textBox_Copy13" HorizontalAlignment="Left" Height="23" Margin="182,528,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="215"/>
-        <TextBox x:Name="textBox_Copy15" HorizontalAlignment="Left" Height="23" Margin="182,458,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="215"/>
-        <TextBox x:Name="textBox_Copy16" HorizontalAlignment="Left" Height="23" Margin="182,424,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="215"/>
-        <TextBox x:Name="textBox_Copy17" HorizontalAlignment="Left" Height="23" Margin="182,391,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="215"/>
-        <ComboBox x:Name="comboBox" HorizontalAlignment="Left" Margin="180,191,0,0" VerticalAlignment="Top" Width="215"/>
-        <DatePicker HorizontalAlignment="Left" Margin="180,257,0,0" VerticalAlignment="Top" Width="215"/>
-        <PasswordBox x:Name="passwordBox" HorizontalAlignment="Left" Margin="182,496,0,0" VerticalAlignment="Top" Width="213"/>
-        <DataGrid x:Name="dataGrid" HorizontalAlignment="Left" Margin="442,92,0,0" VerticalAlignment="Top" Height="496" Width="630"/>
-        <Button x:Name="button" Content="UPDATE" HorizontalAlignment="Left" Margin="588,632,0,0" VerticalAlignment="Top" Width="75"/>
-        <Button x:Name="button_Copy" Content="ADD" HorizontalAlignment="Left" Margin="814,632,0,0" VerticalAlignment="Top" Width="75"/>
-        <Button x:Name="button_Copy1" Content="SAVE" HorizontalAlignment="Left" Margin="474,632,0,0" VerticalAlignment="Top" Width="75" Click="button_Copy1_Click"/>
-        <Button x:Name="button_Copy2" Content="DELETE" HorizontalAlignment="Left" Margin="694,632,0,0" VerticalAlignment="Top" Width="75"/>
-        <Button x:Name="button_Copy3" Content="EXIT" HorizontalAlignment="Left" Margin="934,632,0,0" VerticalAlignment="Top" Width="75"/>
+        <Label x:Name="label_Copy" Content="USERNAME" HorizontalAlignment="Left" Margin="10,384,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="label_Copy1" Content="PASSWORD" HorizontalAlignment="Left" Margin="10,420,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="label_Copy2" Content="EMAIL" HorizontalAlignment="Left" Margin="10,350,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="label_Copy3" Content="BANK ACCOUNT" HorizontalAlignment="Left" Margin="10,454,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="label_Copy4" Content="PICTURE NPWP" HorizontalAlignment="Left" Margin="10,557,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="label_Copy5" Content="ROLES" HorizontalAlignment="Left" Margin="10,488,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="label_Copy6" Content="NPWP NUMBER" HorizontalAlignment="Left" Margin="10,522,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="label_Copy7" Content="PICTURE IDENTITY" HorizontalAlignment="Left" Margin="10,591,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="label_Copy8" Content="ADDRESS" HorizontalAlignment="Left" Margin="10,316,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="label_Copy9" Content="SUB-DISTRICT" HorizontalAlignment="Left" Margin="10,283,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="label_Copy10" Content="REGENCY" HorizontalAlignment="Left" Margin="10,249,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="label_Copy11" Content="PROVINCE" HorizontalAlignment="Left" Margin="10,216,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="label_Copy12" Content="BORN DATE" HorizontalAlignment="Left" Margin="10,182,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="label_Copy13" Content="BORN PLACE" HorizontalAlignment="Left" Margin="10,149,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="label_Copy14" Content="GENDER" HorizontalAlignment="Left" Margin="10,116,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="label_Copy15" Content="IDENTITY ID" HorizontalAlignment="Left" Margin="10,83,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="label_Copy16" Content="IDENTITY TYPE" HorizontalAlignment="Left" Margin="10,49,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="label_Copy17" Content="NAME" HorizontalAlignment="Left" Margin="10,14,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="tbornplace" HorizontalAlignment="Left" Height="23" Margin="180,152,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="215"/>
+        <TextBox x:Name="tsubdis" HorizontalAlignment="Left" Height="23" Margin="182,285,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="215"/>
+        <TextBox x:Name="tregency" HorizontalAlignment="Left" Height="23" Margin="182,251,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="215"/>
+        <TextBox x:Name="tprovince" HorizontalAlignment="Left" Height="23" Margin="182,219,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="215"/>
+        <TextBox x:Name="tname" HorizontalAlignment="Left" Height="23" Margin="182,16,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="215"/>
+        <TextBox x:Name="tidentity_id" HorizontalAlignment="Left" Height="23" Margin="182,86,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="215"/>
+        <TextBox x:Name="tidentity" HorizontalAlignment="Left" Height="23" Margin="182,51,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="215"/>
+        <TextBox x:Name="tpic_identity" HorizontalAlignment="Left" Height="23" Margin="182,595,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="215"/>
+        <TextBox x:Name="tpic_npwp" HorizontalAlignment="Left" Height="23" Margin="182,560,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="215"/>
+        <TextBox x:Name="tnpwp" HorizontalAlignment="Left" Height="23" Margin="182,524,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="215"/>
+        <TextBox x:Name="troles" HorizontalAlignment="Left" Height="23" Margin="182,489,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="215"/>
+        <TextBox x:Name="tbank" HorizontalAlignment="Left" Height="23" Margin="182,456,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="215"/>
+        <TextBox x:Name="tusername" HorizontalAlignment="Left" Height="23" Margin="182,386,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="215"/>
+        <TextBox x:Name="temail" HorizontalAlignment="Left" Height="23" Margin="182,352,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="215"/>
+        <TextBox x:Name="taddress" HorizontalAlignment="Left" Height="23" Margin="182,319,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="215"/>
+        <DatePicker x:Name="tborndate" HorizontalAlignment="Left" Margin="180,185,0,0" VerticalAlignment="Top" Width="215"/>
+        <PasswordBox x:Name="tpassword" HorizontalAlignment="Left" Margin="182,424,0,0" VerticalAlignment="Top" Width="213"/>
+        <Button x:Name="button_Copy1" Content="SAVE" HorizontalAlignment="Left" Margin="158,638,0,0" VerticalAlignment="Top" Width="75" Click="button_Copy1_Click"/>
+        <TextBox x:Name="tgender" HorizontalAlignment="Left" Height="23" Margin="182,116,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="213"/>
 
     </Grid>
 </Window>
