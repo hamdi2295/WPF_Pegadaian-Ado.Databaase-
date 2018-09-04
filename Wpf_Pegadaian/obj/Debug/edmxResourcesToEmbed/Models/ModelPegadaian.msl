@@ -1,0 +1,264 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="PegadaianModelStoreContainer" CdmEntityContainer="pegadaianEntities2">
+    <EntitySetMapping Name="CATEGORies">
+      <EntityTypeMapping TypeName="PegadaianModel.CATEGORY">
+        <MappingFragment StoreEntitySet="CATEGORY">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="NAME" ColumnName="NAME" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DETAIL_BUSINESS">
+      <EntityTypeMapping TypeName="PegadaianModel.DETAIL_BUSINESS">
+        <MappingFragment StoreEntitySet="DETAIL_BUSINESS">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="BUSINESS_AGE" ColumnName="BUSINESS_AGE" />
+          <ScalarProperty Name="PROVINCE" ColumnName="PROVINCE" />
+          <ScalarProperty Name="REGENCY" ColumnName="REGENCY" />
+          <ScalarProperty Name="SUB_DISTRICT" ColumnName="SUB_DISTRICT" />
+          <ScalarProperty Name="ADDRESS" ColumnName="ADDRESS" />
+          <ScalarProperty Name="PICTURE" ColumnName="PICTURE" />
+          <ScalarProperty Name="BUSINESS_FINANCING_ID" ColumnName="BUSINESS_FINANCING_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DETAIL_TYPE_VEHICLE">
+      <EntityTypeMapping TypeName="PegadaianModel.DETAIL_TYPE_VEHICLE">
+        <MappingFragment StoreEntitySet="DETAIL_TYPE_VEHICLE">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="POLICE_NUMBER" ColumnName="POLICE_NUMBER" />
+          <ScalarProperty Name="STNK_NUMBER" ColumnName="STNK_NUMBER" />
+          <ScalarProperty Name="MACHINE_NUMBER" ColumnName="MACHINE_NUMBER" />
+          <ScalarProperty Name="BPKB_NUMBER" ColumnName="BPKB_NUMBER" />
+          <ScalarProperty Name="BPKB_OWNER" ColumnName="BPKB_OWNER" />
+          <ScalarProperty Name="PICTURE" ColumnName="PICTURE" />
+          <ScalarProperty Name="ORDER_NUMBER" ColumnName="ORDER_NUMBER" />
+          <ScalarProperty Name="TYPE_VEHICLE_ID" ColumnName="TYPE_VEHICLE_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ELECTRONICs">
+      <EntityTypeMapping TypeName="PegadaianModel.ELECTRONIC">
+        <MappingFragment StoreEntitySet="ELECTRONIC">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="BRAND" ColumnName="BRAND" />
+          <ScalarProperty Name="TYPE" ColumnName="TYPE" />
+          <ScalarProperty Name="YEARS_OF_BUY" ColumnName="YEARS_OF_BUY" />
+          <ScalarProperty Name="MARKET_PRICE" ColumnName="MARKET_PRICE" />
+          <ScalarProperty Name="CONDITION" ColumnName="CONDITION" />
+          <ScalarProperty Name="PICTURE" ColumnName="PICTURE" />
+          <ScalarProperty Name="TRANSACTION_ID" ColumnName="TRANSACTION_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GOLDs">
+      <EntityTypeMapping TypeName="PegadaianModel.GOLD">
+        <MappingFragment StoreEntitySet="GOLD">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="TYPE" ColumnName="TYPE" />
+          <ScalarProperty Name="UNIT" ColumnName="UNIT" />
+          <ScalarProperty Name="SELLING_PRICE" ColumnName="SELLING_PRICE" />
+          <ScalarProperty Name="PURCHASE_PRICE" ColumnName="PURCHASE_PRICE" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GOLD_SAVING">
+      <EntityTypeMapping TypeName="PegadaianModel.GOLD_SAVING">
+        <MappingFragment StoreEntitySet="GOLD_SAVING">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="ACCOUNT_NUMBER" ColumnName="ACCOUNT_NUMBER" />
+          <ScalarProperty Name="BALANCE" ColumnName="BALANCE" />
+          <ScalarProperty Name="QUANTITY" ColumnName="QUANTITY" />
+          <ScalarProperty Name="PRICE" ColumnName="PRICE" />
+          <ScalarProperty Name="TRANSACTION_ID" ColumnName="TRANSACTION_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="HANDPHONEs">
+      <EntityTypeMapping TypeName="PegadaianModel.HANDPHONE">
+        <MappingFragment StoreEntitySet="HANDPHONE">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="BRAND" ColumnName="BRAND" />
+          <ScalarProperty Name="TYPE" ColumnName="TYPE" />
+          <ScalarProperty Name="YEARS_OF_BUY" ColumnName="YEARS_OF_BUY" />
+          <ScalarProperty Name="SELLING_PRICE" ColumnName="SELLING_PRICE" />
+          <ScalarProperty Name="CONDITION" ColumnName="CONDITION" />
+          <ScalarProperty Name="PICTURE" ColumnName="PICTURE" />
+          <ScalarProperty Name="TRANSACTION_ID" ColumnName="TRANSACTION_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="INSTALLMENTs">
+      <EntityTypeMapping TypeName="PegadaianModel.INSTALLMENT">
+        <MappingFragment StoreEntitySet="INSTALLMENT">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="INSTALLMENT_DATE" ColumnName="INSTALLMENT_DATE" />
+          <ScalarProperty Name="DUE_DATE" ColumnName="DUE_DATE" />
+          <ScalarProperty Name="AMOUNT" ColumnName="AMOUNT" />
+          <ScalarProperty Name="INSTALLMENT_AMOUNT" ColumnName="INSTALLMENT_AMOUNT" />
+          <ScalarProperty Name="TRANSACTION_ID" ColumnName="TRANSACTION_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="INSTALLMENT_TYPE">
+      <EntityTypeMapping TypeName="PegadaianModel.INSTALLMENT_TYPE">
+        <MappingFragment StoreEntitySet="INSTALLMENT_TYPE">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="NAME" ColumnName="NAME" />
+          <ScalarProperty Name="DESCRIPTION" ColumnName="DESCRIPTION" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="JEWELRies">
+      <EntityTypeMapping TypeName="PegadaianModel.JEWELRY">
+        <MappingFragment StoreEntitySet="JEWELRY">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="LEVEL" ColumnName="LEVEL" />
+          <ScalarProperty Name="BRUTO" ColumnName="BRUTO" />
+          <ScalarProperty Name="NETTO" ColumnName="NETTO" />
+          <ScalarProperty Name="PICTURE" ColumnName="PICTURE" />
+          <ScalarProperty Name="TRANSACTION_ID" ColumnName="TRANSACTION_ID" />
+          <ScalarProperty Name="GOLD_ID" ColumnName="GOLD_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="OUTLETs">
+      <EntityTypeMapping TypeName="PegadaianModel.OUTLET">
+        <MappingFragment StoreEntitySet="OUTLET">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="NAME" ColumnName="NAME" />
+          <ScalarProperty Name="PROVINCE" ColumnName="PROVINCE" />
+          <ScalarProperty Name="REGENCY" ColumnName="REGENCY" />
+          <ScalarProperty Name="SUB_DISTRICT" ColumnName="SUB_DISTRICT" />
+          <ScalarProperty Name="ADDRESS" ColumnName="ADDRESS" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PRECIOUS_METAL">
+      <EntityTypeMapping TypeName="PegadaianModel.PRECIOUS_METAL">
+        <MappingFragment StoreEntitySet="PRECIOUS_METAL">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="WEIGHT" ColumnName="WEIGHT" />
+          <ScalarProperty Name="AMOUNT" ColumnName="AMOUNT" />
+          <ScalarProperty Name="PICTURE" ColumnName="PICTURE" />
+          <ScalarProperty Name="TRANSACTION_ID" ColumnName="TRANSACTION_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PRODUCTs">
+      <EntityTypeMapping TypeName="PegadaianModel.PRODUCT">
+        <MappingFragment StoreEntitySet="PRODUCT">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="NAME" ColumnName="NAME" />
+          <ScalarProperty Name="CATEGORY_ID" ColumnName="CATEGORY_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ROLEs">
+      <EntityTypeMapping TypeName="PegadaianModel.ROLE">
+        <MappingFragment StoreEntitySet="ROLE">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="NAME" ColumnName="NAME" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="sysdiagrams">
+      <EntityTypeMapping TypeName="PegadaianModel.sysdiagram">
+        <MappingFragment StoreEntitySet="sysdiagrams">
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="principal_id" ColumnName="principal_id" />
+          <ScalarProperty Name="diagram_id" ColumnName="diagram_id" />
+          <ScalarProperty Name="version" ColumnName="version" />
+          <ScalarProperty Name="definition" ColumnName="definition" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TRANSACTIONs">
+      <EntityTypeMapping TypeName="PegadaianModel.TRANSACTION">
+        <MappingFragment StoreEntitySet="TRANSACTION">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="PRODUCT_ID" ColumnName="PRODUCT_ID" />
+          <ScalarProperty Name="INSTALLMENT_TYPE_ID" ColumnName="INSTALLMENT_TYPE_ID" />
+          <ScalarProperty Name="OUTLET_ID" ColumnName="OUTLET_ID" />
+          <ScalarProperty Name="TRANSACTIONS_DATE" ColumnName="TRANSACTIONS_DATE" />
+          <ScalarProperty Name="ADMINISTRATIVE_COST" ColumnName="ADMINISTRATIVE_COST" />
+          <ScalarProperty Name="approved_date" ColumnName="approved_date" />
+          <ScalarProperty Name="approved_status" ColumnName="approved_status" />
+          <ScalarProperty Name="accepted_date" ColumnName="accepted_date" />
+          <ScalarProperty Name="accepted_status" ColumnName="accepted_status" />
+          <ScalarProperty Name="remaining_amount" ColumnName="remaining_amount" />
+          <ScalarProperty Name="loan_amount" ColumnName="loan_amount" />
+          <ScalarProperty Name="user_id" ColumnName="user_id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TYPE_BUSINESS_FINANCING">
+      <EntityTypeMapping TypeName="PegadaianModel.TYPE_BUSINESS_FINANCING">
+        <MappingFragment StoreEntitySet="TYPE_BUSINESS_FINANCING">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="CAPITAL_REQUIREMENT" ColumnName="CAPITAL_REQUIREMENT" />
+          <ScalarProperty Name="BUSINESS_TYPE" ColumnName="BUSINESS_TYPE" />
+          <ScalarProperty Name="TURNOVER" ColumnName="TURNOVER" />
+          <ScalarProperty Name="PROFIT" ColumnName="PROFIT" />
+          <ScalarProperty Name="TRANSACTION_ID" ColumnName="TRANSACTION_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TYPE_LAPTOP">
+      <EntityTypeMapping TypeName="PegadaianModel.TYPE_LAPTOP">
+        <MappingFragment StoreEntitySet="TYPE_LAPTOP">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="BRAND" ColumnName="BRAND" />
+          <ScalarProperty Name="TYPE" ColumnName="TYPE" />
+          <ScalarProperty Name="HARDDISK_CAPACITY" ColumnName="HARDDISK_CAPACITY" />
+          <ScalarProperty Name="YEARS_OF_BUY" ColumnName="YEARS_OF_BUY" />
+          <ScalarProperty Name="SELLING_PRICE" ColumnName="SELLING_PRICE" />
+          <ScalarProperty Name="DESCRIPTION" ColumnName="DESCRIPTION" />
+          <ScalarProperty Name="PICTURE" ColumnName="PICTURE" />
+          <ScalarProperty Name="TRANSACTION_ID" ColumnName="TRANSACTION_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TYPE_VEHICLE">
+      <EntityTypeMapping TypeName="PegadaianModel.TYPE_VEHICLE">
+        <MappingFragment StoreEntitySet="TYPE_VEHICLE">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="VEHICLE_TYPE" ColumnName="VEHICLE_TYPE" />
+          <ScalarProperty Name="BRAND" ColumnName="BRAND" />
+          <ScalarProperty Name="TYPE" ColumnName="TYPE" />
+          <ScalarProperty Name="CYLINDER" ColumnName="CYLINDER" />
+          <ScalarProperty Name="YEARS_OF_BUY" ColumnName="YEARS_OF_BUY" />
+          <ScalarProperty Name="MARKET_PRICE" ColumnName="MARKET_PRICE" />
+          <ScalarProperty Name="DESCRIPTION" ColumnName="DESCRIPTION" />
+          <ScalarProperty Name="TRANSACTION_ID" ColumnName="TRANSACTION_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="USERs">
+      <EntityTypeMapping TypeName="PegadaianModel.USER">
+        <MappingFragment StoreEntitySet="USER">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="NAME" ColumnName="NAME" />
+          <ScalarProperty Name="IDENTITY_TYPE" ColumnName="IDENTITY_TYPE" />
+          <ScalarProperty Name="IDENTITY_NUMBER" ColumnName="IDENTITY_NUMBER" />
+          <ScalarProperty Name="GENDER" ColumnName="GENDER" />
+          <ScalarProperty Name="BORN_PLACE" ColumnName="BORN_PLACE" />
+          <ScalarProperty Name="BORN_DATE" ColumnName="BORN_DATE" />
+          <ScalarProperty Name="PROVINCE" ColumnName="PROVINCE" />
+          <ScalarProperty Name="REGENCY" ColumnName="REGENCY" />
+          <ScalarProperty Name="SUB_DISTRICT" ColumnName="SUB_DISTRICT" />
+          <ScalarProperty Name="ADDRESS" ColumnName="ADDRESS" />
+          <ScalarProperty Name="EMAIL" ColumnName="EMAIL" />
+          <ScalarProperty Name="USERNAME" ColumnName="USERNAME" />
+          <ScalarProperty Name="PASSWORD" ColumnName="PASSWORD" />
+          <ScalarProperty Name="BANK_ACCOUNT" ColumnName="BANK_ACCOUNT" />
+          <ScalarProperty Name="ROLE_ID" ColumnName="ROLE_ID" />
+          <ScalarProperty Name="NUMBER_NPWP" ColumnName="NUMBER_NPWP" />
+          <ScalarProperty Name="PICTURE_NPWP" ColumnName="PICTURE_NPWP" />
+          <ScalarProperty Name="PICTURE_IDENTITY" ColumnName="PICTURE_IDENTITY" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

@@ -1,0 +1,125 @@
+C:\Users\Alhamda\AppData\Local\Temporary Projects\Wpf_Pegadaian\bin\Debug\Wpf_Pegadaian.exe.config
+C:\Users\Alhamda\AppData\Local\Temporary Projects\Wpf_Pegadaian\bin\Debug\Wpf_Pegadaian.exe
+C:\Users\Alhamda\AppData\Local\Temporary Projects\Wpf_Pegadaian\bin\Debug\Wpf_Pegadaian.pdb
+C:\Users\Alhamda\AppData\Local\Temporary Projects\Wpf_Pegadaian\obj\Debug\Wpf_Pegadaian.csprojResolveAssemblyReference.cache
+C:\Users\Alhamda\AppData\Local\Temporary Projects\Wpf_Pegadaian\obj\Debug\MainWindow.g.cs
+C:\Users\Alhamda\AppData\Local\Temporary Projects\Wpf_Pegadaian\obj\Debug\App.g.cs
+C:\Users\Alhamda\AppData\Local\Temporary Projects\Wpf_Pegadaian\obj\Debug\Wpf_Pegadaian_MarkupCompile.cache
+C:\Users\Alhamda\AppData\Local\Temporary Projects\Wpf_Pegadaian\obj\Debug\Wpf_Pegadaian_MarkupCompile.lref
+C:\Users\Alhamda\AppData\Local\Temporary Projects\Wpf_Pegadaian\obj\Debug\MainWindow.baml
+C:\Users\Alhamda\AppData\Local\Temporary Projects\Wpf_Pegadaian\obj\Debug\Wpf_Pegadaian.g.resources
+C:\Users\Alhamda\AppData\Local\Temporary Projects\Wpf_Pegadaian\obj\Debug\Wpf_Pegadaian.Properties.Resources.resources
+C:\Users\Alhamda\AppData\Local\Temporary Projects\Wpf_Pegadaian\obj\Debug\Wpf_Pegadaian.csproj.GenerateResource.Cache
+C:\Users\Alhamda\AppData\Local\Temporary Projects\Wpf_Pegadaian\obj\Debug\Wpf_Pegadaian.exe
+C:\Users\Alhamda\AppData\Local\Temporary Projects\Wpf_Pegadaian\obj\Debug\Wpf_Pegadaian.pdb
+E:\MII\Wpf_Pegadaian\Wpf_Pegadaian\bin\Debug\Wpf_Pegadaian.exe.config
+E:\MII\Wpf_Pegadaian\Wpf_Pegadaian\obj\Debug\Wpf_Pegadaian.exe
+E:\MII\Wpf_Pegadaian\Wpf_Pegadaian\obj\Debug\Wpf_Pegadaian.pdb
+E:\MII\Wpf_Pegadaian\Wpf_Pegadaian\bin\Debug\Wpf_Pegadaian.exe
+E:\MII\Wpf_Pegadaian\Wpf_Pegadaian\bin\Debug\Wpf_Pegadaian.pdb
+E:\MII\Wpf_Pegadaian\Wpf_Pegadaian\obj\Debug\MainWindow.g.cs
+E:\MII\Wpf_Pegadaian\Wpf_Pegadaian\obj\Debug\App.g.cs
+E:\MII\Wpf_Pegadaian\Wpf_Pegadaian\obj\Debug\Wpf_Pegadaian_MarkupCompile.cache
+E:\MII\Wpf_Pegadaian\Wpf_Pegadaian\obj\Debug\Wpf_Pegadaian_MarkupCompile.lref
+E:\MII\Wpf_Pegadaian\Wpf_Pegadaian\obj\Debug\MainWindow.baml
+E:\MII\Wpf_Pegadaian\Wpf_Pegadaian\obj\Debug\Wpf_Pegadaian.g.resources
+E:\MII\Wpf_Pegadaian\Wpf_Pegadaian\obj\Debug\Wpf_Pegadaian.Properties.Resources.resources
+E:\MII\Wpf_Pegadaian\Wpf_Pegadaian\obj\Debug\Wpf_Pegadaian.csproj.GenerateResource.Cache
+E:\MII\Wpf_Pegadaian\Wpf_Pegadaian\obj\Debug\Wpf_Pegadaian.csprojResolveAssemblyReference.cache
+E:\MII\Wpf_Pegadaian\Wpf_Pegadaian\obj\Debug\Forms\instal_types.g.cs
+E:\MII\Wpf_Pegadaian\Wpf_Pegadaian\obj\Debug\Forms\instal_types.baml
+E:\MII\Wpf_Pegadaian\Wpf_Pegadaian\obj\Debug\Forms\outlets.g.cs
+E:\MII\Wpf_Pegadaian\Wpf_Pegadaian\obj\Debug\Forms\outlets.baml
+E:\MII\Wpf_Pegadaian\Wpf_Pegadaian\bin\Debug\EntityFramework.dll
+E:\MII\Wpf_Pegadaian\Wpf_Pegadaian\bin\Debug\EntityFramework.SqlServer.dll
+E:\MII\Wpf_Pegadaian\Wpf_Pegadaian\bin\Debug\EntityFramework.xml
+E:\MII\Wpf_Pegadaian\Wpf_Pegadaian\bin\Debug\EntityFramework.SqlServer.xml
+E:\MII\Wpf_Pegadaian\Wpf_Pegadaian\obj\Debug\Forms\login.g.cs
+E:\MII\Wpf_Pegadaian\Wpf_Pegadaian\obj\Debug\Wpf_Pegadaian_Content.g.cs
+E:\MII\Wpf_Pegadaian\Wpf_Pegadaian\obj\Debug\Forms\login.baml
+G:\Wpf_Pegadaian\Wpf_Pegadaian\bin\Debug\Wpf_Pegadaian.exe.config
+G:\Wpf_Pegadaian\Wpf_Pegadaian\obj\Debug\Wpf_Pegadaian.exe
+G:\Wpf_Pegadaian\Wpf_Pegadaian\obj\Debug\Wpf_Pegadaian.pdb
+G:\Wpf_Pegadaian\Wpf_Pegadaian\bin\Debug\Wpf_Pegadaian.exe
+G:\Wpf_Pegadaian\Wpf_Pegadaian\bin\Debug\Wpf_Pegadaian.pdb
+G:\Wpf_Pegadaian\Wpf_Pegadaian\bin\Debug\EntityFramework.dll
+G:\Wpf_Pegadaian\Wpf_Pegadaian\bin\Debug\EntityFramework.SqlServer.dll
+G:\Wpf_Pegadaian\Wpf_Pegadaian\bin\Debug\EntityFramework.xml
+G:\Wpf_Pegadaian\Wpf_Pegadaian\bin\Debug\EntityFramework.SqlServer.xml
+G:\Wpf_Pegadaian\Wpf_Pegadaian\obj\Debug\Wpf_Pegadaian.csprojResolveAssemblyReference.cache
+G:\Wpf_Pegadaian\Wpf_Pegadaian\obj\Debug\Forms\golds.g.cs
+G:\Wpf_Pegadaian\Wpf_Pegadaian\obj\Debug\Forms\Home.g.cs
+G:\Wpf_Pegadaian\Wpf_Pegadaian\obj\Debug\Forms\instal_types.g.cs
+G:\Wpf_Pegadaian\Wpf_Pegadaian\obj\Debug\Forms\login.g.cs
+G:\Wpf_Pegadaian\Wpf_Pegadaian\obj\Debug\Forms\outlets.g.cs
+G:\Wpf_Pegadaian\Wpf_Pegadaian\obj\Debug\Forms\update_golds.g.cs
+G:\Wpf_Pegadaian\Wpf_Pegadaian\obj\Debug\Forms\user.g.cs
+G:\Wpf_Pegadaian\Wpf_Pegadaian\obj\Debug\MainWindow.g.cs
+G:\Wpf_Pegadaian\Wpf_Pegadaian\obj\Debug\App.g.cs
+G:\Wpf_Pegadaian\Wpf_Pegadaian\obj\Debug\Wpf_Pegadaian_Content.g.cs
+G:\Wpf_Pegadaian\Wpf_Pegadaian\obj\Debug\Wpf_Pegadaian_MarkupCompile.cache
+G:\Wpf_Pegadaian\Wpf_Pegadaian\obj\Debug\Wpf_Pegadaian_MarkupCompile.lref
+G:\Wpf_Pegadaian\Wpf_Pegadaian\obj\Debug\Forms\golds.baml
+G:\Wpf_Pegadaian\Wpf_Pegadaian\obj\Debug\Forms\Home.baml
+G:\Wpf_Pegadaian\Wpf_Pegadaian\obj\Debug\Forms\instal_types.baml
+G:\Wpf_Pegadaian\Wpf_Pegadaian\obj\Debug\Forms\login.baml
+G:\Wpf_Pegadaian\Wpf_Pegadaian\obj\Debug\Forms\outlets.baml
+G:\Wpf_Pegadaian\Wpf_Pegadaian\obj\Debug\Forms\update_golds.baml
+G:\Wpf_Pegadaian\Wpf_Pegadaian\obj\Debug\Forms\user.baml
+G:\Wpf_Pegadaian\Wpf_Pegadaian\obj\Debug\MainWindow.baml
+G:\Wpf_Pegadaian\Wpf_Pegadaian\obj\Debug\Wpf_Pegadaian.g.resources
+G:\Wpf_Pegadaian\Wpf_Pegadaian\obj\Debug\Wpf_Pegadaian.Properties.Resources.resources
+G:\Wpf_Pegadaian\Wpf_Pegadaian\obj\Debug\Wpf_Pegadaian.csproj.GenerateResource.Cache
+G:\Wpf_Pegadaian\Wpf_Pegadaian\obj\Debug\Forms\Menu.g.cs
+G:\Wpf_Pegadaian\Wpf_Pegadaian\obj\Debug\Forms\Menu.baml
+G:\Wpf_Pegadaian\Wpf_Pegadaian\obj\Debug\Forms\list_user.g.cs
+G:\Wpf_Pegadaian\Wpf_Pegadaian\obj\Debug\Forms\list_user.baml
+G:\Wpf_Pegadaian\Wpf_Pegadaian\obj\Debug\Forms\list_handphone.g.cs
+G:\Wpf_Pegadaian\Wpf_Pegadaian\obj\Debug\Forms\list_handphone.baml
+G:\Wpf_Pegadaian\Wpf_Pegadaian\obj\Debug\Forms\list_logammulia.g.cs
+G:\Wpf_Pegadaian\Wpf_Pegadaian\obj\Debug\Forms\list_logammulia.baml
+G:\Wpf_Pegadaian\Wpf_Pegadaian\obj\Debug\Forms\list_goldsaving.g.cs
+G:\Wpf_Pegadaian\Wpf_Pegadaian\obj\Debug\Forms\list_goldsaving.baml
+G:\Wpf_Pegadaian\Wpf_Pegadaian\obj\Debug\Forms\list_electronics.g.cs
+G:\Wpf_Pegadaian\Wpf_Pegadaian\obj\Debug\Forms\list_electronics.baml
+G:\Wpf_Pegadaian\Wpf_Pegadaian\obj\Debug\Forms\category.g.cs
+G:\Wpf_Pegadaian\Wpf_Pegadaian\obj\Debug\Forms\category.baml
+C:\Users\Rika\Documents\GitHub\WPF_Pegadaian-Ado.Databaase-\Wpf_Pegadaian\Wpf_Pegadaian\bin\Debug\Wpf_Pegadaian.exe.config
+C:\Users\Rika\Documents\GitHub\WPF_Pegadaian-Ado.Databaase-\Wpf_Pegadaian\Wpf_Pegadaian\obj\Debug\Wpf_Pegadaian.exe
+C:\Users\Rika\Documents\GitHub\WPF_Pegadaian-Ado.Databaase-\Wpf_Pegadaian\Wpf_Pegadaian\obj\Debug\Wpf_Pegadaian.pdb
+C:\Users\Rika\Documents\GitHub\WPF_Pegadaian-Ado.Databaase-\Wpf_Pegadaian\Wpf_Pegadaian\obj\Debug\Wpf_Pegadaian.csprojResolveAssemblyReference.cache
+C:\Users\Rika\Documents\GitHub\WPF_Pegadaian-Ado.Databaase-\Wpf_Pegadaian\Wpf_Pegadaian\obj\Debug\Forms\category.g.cs
+C:\Users\Rika\Documents\GitHub\WPF_Pegadaian-Ado.Databaase-\Wpf_Pegadaian\Wpf_Pegadaian\obj\Debug\Forms\golds.g.cs
+C:\Users\Rika\Documents\GitHub\WPF_Pegadaian-Ado.Databaase-\Wpf_Pegadaian\Wpf_Pegadaian\obj\Debug\Forms\Home.g.cs
+C:\Users\Rika\Documents\GitHub\WPF_Pegadaian-Ado.Databaase-\Wpf_Pegadaian\Wpf_Pegadaian\obj\Debug\Forms\instal_types.g.cs
+C:\Users\Rika\Documents\GitHub\WPF_Pegadaian-Ado.Databaase-\Wpf_Pegadaian\Wpf_Pegadaian\obj\Debug\Forms\list_electronics.g.cs
+C:\Users\Rika\Documents\GitHub\WPF_Pegadaian-Ado.Databaase-\Wpf_Pegadaian\Wpf_Pegadaian\obj\Debug\Forms\list_goldsaving.g.cs
+C:\Users\Rika\Documents\GitHub\WPF_Pegadaian-Ado.Databaase-\Wpf_Pegadaian\Wpf_Pegadaian\obj\Debug\Forms\list_handphone.g.cs
+C:\Users\Rika\Documents\GitHub\WPF_Pegadaian-Ado.Databaase-\Wpf_Pegadaian\Wpf_Pegadaian\obj\Debug\Forms\list_user.g.cs
+C:\Users\Rika\Documents\GitHub\WPF_Pegadaian-Ado.Databaase-\Wpf_Pegadaian\Wpf_Pegadaian\obj\Debug\Forms\login.g.cs
+C:\Users\Rika\Documents\GitHub\WPF_Pegadaian-Ado.Databaase-\Wpf_Pegadaian\Wpf_Pegadaian\obj\Debug\Forms\Menu.g.cs
+C:\Users\Rika\Documents\GitHub\WPF_Pegadaian-Ado.Databaase-\Wpf_Pegadaian\Wpf_Pegadaian\obj\Debug\Forms\outlets.g.cs
+C:\Users\Rika\Documents\GitHub\WPF_Pegadaian-Ado.Databaase-\Wpf_Pegadaian\Wpf_Pegadaian\obj\Debug\Forms\update_golds.g.cs
+C:\Users\Rika\Documents\GitHub\WPF_Pegadaian-Ado.Databaase-\Wpf_Pegadaian\Wpf_Pegadaian\obj\Debug\Forms\user.g.cs
+C:\Users\Rika\Documents\GitHub\WPF_Pegadaian-Ado.Databaase-\Wpf_Pegadaian\Wpf_Pegadaian\obj\Debug\Forms\list_logammulia.g.cs
+C:\Users\Rika\Documents\GitHub\WPF_Pegadaian-Ado.Databaase-\Wpf_Pegadaian\Wpf_Pegadaian\obj\Debug\MainWindow.g.cs
+C:\Users\Rika\Documents\GitHub\WPF_Pegadaian-Ado.Databaase-\Wpf_Pegadaian\Wpf_Pegadaian\obj\Debug\App.g.cs
+C:\Users\Rika\Documents\GitHub\WPF_Pegadaian-Ado.Databaase-\Wpf_Pegadaian\Wpf_Pegadaian\obj\Debug\Wpf_Pegadaian_Content.g.cs
+C:\Users\Rika\Documents\GitHub\WPF_Pegadaian-Ado.Databaase-\Wpf_Pegadaian\Wpf_Pegadaian\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\Rika\Documents\GitHub\WPF_Pegadaian-Ado.Databaase-\Wpf_Pegadaian\Wpf_Pegadaian\obj\Debug\Wpf_Pegadaian_MarkupCompile.cache
+C:\Users\Rika\Documents\GitHub\WPF_Pegadaian-Ado.Databaase-\Wpf_Pegadaian\Wpf_Pegadaian\obj\Debug\Wpf_Pegadaian_MarkupCompile.lref
+C:\Users\Rika\Documents\GitHub\WPF_Pegadaian-Ado.Databaase-\Wpf_Pegadaian\Wpf_Pegadaian\obj\Debug\Forms\RedView.g.cs
+E:\MII\Wpf_Pegadaian\Wpf_Pegadaian\obj\Debug\Forms\list_electronics.g.cs
+E:\MII\Wpf_Pegadaian\Wpf_Pegadaian\obj\Debug\Forms\list_goldsaving.g.cs
+E:\MII\Wpf_Pegadaian\Wpf_Pegadaian\obj\Debug\Forms\list_handphone.g.cs
+E:\MII\Wpf_Pegadaian\Wpf_Pegadaian\obj\Debug\Forms\list_user.g.cs
+E:\MII\Wpf_Pegadaian\Wpf_Pegadaian\obj\Debug\Forms\Menu.g.cs
+E:\MII\Wpf_Pegadaian\Wpf_Pegadaian\obj\Debug\Forms\RedView.g.cs
+E:\MII\Wpf_Pegadaian\Wpf_Pegadaian\obj\Debug\Forms\list_logammulia.g.cs
+E:\MII\Wpf_Pegadaian\Wpf_Pegadaian\obj\Debug\Forms\list_electronics.baml
+E:\MII\Wpf_Pegadaian\Wpf_Pegadaian\obj\Debug\Forms\list_goldsaving.baml
+E:\MII\Wpf_Pegadaian\Wpf_Pegadaian\obj\Debug\Forms\list_handphone.baml
+E:\MII\Wpf_Pegadaian\Wpf_Pegadaian\obj\Debug\Forms\list_user.baml
+E:\MII\Wpf_Pegadaian\Wpf_Pegadaian\obj\Debug\Forms\Menu.baml
+E:\MII\Wpf_Pegadaian\Wpf_Pegadaian\obj\Debug\Forms\RedView.baml
+E:\MII\Wpf_Pegadaian\Wpf_Pegadaian\obj\Debug\Forms\list_logammulia.baml

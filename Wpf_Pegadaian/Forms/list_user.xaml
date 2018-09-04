@@ -1,0 +1,107 @@
+﻿<Window x:Class="Wpf_Pegadaian.Forms.list_user"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Wpf_Pegadaian.Forms"
+        mc:Ignorable="d"
+        Title="list_user" Height="480" Width="1057.103">
+    <Grid Margin="0,0,0,-1" Background="#FF2DD312">
+        <TabControl x:Name="tabControl" HorizontalAlignment="Left" Height="450" VerticalAlignment="Top" Width="1049" Margin="0,-1,0,0">
+            <TabItem Header="USER">
+                <Grid Background="#FF2FC917" Margin="0,-4,0,0">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="52*"/>
+                        <ColumnDefinition Width="13*"/>
+                        <ColumnDefinition Width="974*"/>
+                    </Grid.ColumnDefinitions>
+                    <DataGrid AutoGenerateColumns="False" x:Name="dataGridUser" HorizontalAlignment="Left" VerticalAlignment="Top" Height="423" Width="410" Grid.ColumnSpan="3" SelectionChanged="dataGridUser_SelectionChanged_1" Margin="0,0,0,-1">
+                        <DataGrid.Columns>
+                            <DataGridTextColumn Header="Id" Binding="{Binding ID}"/>
+                            <DataGridTextColumn Header="Name" Binding="{Binding NAME}"/>
+                            <DataGridTextColumn Header="Identity Type" Binding="{Binding IDENTITY_TYPE}"/>
+                            <DataGridTextColumn Header="Identity Number" Binding="{Binding IDENTITY_NUMBER}"/>
+                            <DataGridTextColumn Header="Gender" Binding="{Binding GENDER}"/>
+                            <DataGridTextColumn Header="Born Place" Binding="{Binding BORN_PLACE}"/>
+                            <DataGridTextColumn Header="Born Date" Binding="{Binding BORN_DATE}"/>
+                            <DataGridTextColumn Header="Province" Binding="{Binding PROVINCE}"/>
+                            <DataGridTextColumn Header="Regency" Binding="{Binding REGENCY}"/>
+                            <DataGridTextColumn Header="Sub District" Binding="{Binding SUB_DISTRICT}"/>
+                            <DataGridTextColumn Header="Address" Binding="{Binding ADDRESS}"/>
+                            <DataGridTextColumn Header="Email" Binding="{Binding EMAIL}"/>
+                            <DataGridTextColumn Header="Username" Binding="{Binding USERNAME}"/>
+                            <DataGridTextColumn Header="Password" Binding="{Binding PASSWORD}"/>
+                            <DataGridTextColumn Header="Bank Account" Binding="{Binding BANK_ACCOUNT}"/>
+                            <DataGridTextColumn Header="Role Id" Binding="{Binding ROLE_ID}"/>
+                            <DataGridTextColumn Header="Number Npwp" Binding="{Binding NUMBER_NPWP}"/>
+                            <DataGridTextColumn Header="Picture Npwp" Binding="{Binding PICTURE_NPWP}"/>
+                            <DataGridTextColumn Header="Picture Identity" Binding="{Binding PICTURE_IDENTITY}"/>
+                        </DataGrid.Columns>
+                    </DataGrid>
+                    <Label x:Name="label" Content="NAME" Grid.Column="2" HorizontalAlignment="Left" Margin="371,23,0,0" VerticalAlignment="Top"/>
+                    <Label x:Name="label_Copy" Content="PICTURE IDENTITY" Grid.Column="2" HorizontalAlignment="Left" Margin="661,301,0,0" VerticalAlignment="Top"/>
+                    <Label x:Name="label_Copy1" Content="PICTURE NPWP" Grid.Column="2" HorizontalAlignment="Left" Margin="661,267,0,0" VerticalAlignment="Top"/>
+                    <Label x:Name="label_Copy2" Content="NUMBER NPWP" Grid.Column="2" HorizontalAlignment="Left" Margin="661,233,0,0" VerticalAlignment="Top"/>
+                    <Label x:Name="label_Copy3" Content="ROLE" Grid.Column="2" HorizontalAlignment="Left" Margin="661,199,0,0" VerticalAlignment="Top"/>
+                    <Label x:Name="label_Copy4" Content="BANCK ACCOUNT" Grid.Column="2" HorizontalAlignment="Left" Margin="661,163,0,0" VerticalAlignment="Top"/>
+                    <Label x:Name="label_Copy5" Content="PASSWORD" Grid.Column="2" HorizontalAlignment="Left" Margin="661,128,0,0" VerticalAlignment="Top"/>
+                    <Label x:Name="label_Copy6" Content="USERNAME" Grid.Column="2" HorizontalAlignment="Left" Margin="661,93,0,0" VerticalAlignment="Top"/>
+                    <Label x:Name="label_Copy7" Content="EMAIL" Grid.Column="2" HorizontalAlignment="Left" Margin="661,57,0,0" VerticalAlignment="Top"/>
+                    <Label x:Name="label_Copy8" Content="ADDRESS" Grid.Column="2" HorizontalAlignment="Left" Margin="661,23,0,0" VerticalAlignment="Top"/>
+                    <Label x:Name="label_Copy9" Content="SUB DISTRICT" Grid.Column="2" HorizontalAlignment="Left" Margin="371,301,0,0" VerticalAlignment="Top"/>
+                    <Label x:Name="label_Copy10" Content="REGENCY" Grid.Column="2" HorizontalAlignment="Left" Margin="371,267,0,0" VerticalAlignment="Top"/>
+                    <Label x:Name="label_Copy11" Content="PROVINCE" Grid.Column="2" HorizontalAlignment="Left" Margin="371,233,0,0" VerticalAlignment="Top"/>
+                    <Label x:Name="label_Copy12" Content="BORN DATE" Grid.Column="2" HorizontalAlignment="Left" Margin="371,199,0,0" VerticalAlignment="Top"/>
+                    <Label x:Name="label_Copy13" Content="BORN PLACE" Grid.Column="2" HorizontalAlignment="Left" Margin="371,163,0,0" VerticalAlignment="Top"/>
+                    <Label x:Name="label_Copy14" Content="GENDER" Grid.Column="2" HorizontalAlignment="Left" Margin="371,128,0,0" VerticalAlignment="Top"/>
+                    <Label x:Name="label_Copy15" Content="IDENTITY NUMBER" Grid.Column="2" HorizontalAlignment="Left" Margin="371,93,0,0" VerticalAlignment="Top"/>
+                    <Label x:Name="label_Copy16" Content="IDENTITY TYPE" Grid.Column="2" HorizontalAlignment="Left" Margin="371,57,0,0" VerticalAlignment="Top"/>
+                    <TextBox x:Name="tu_name" Grid.Column="2" HorizontalAlignment="Left" Height="23" Margin="485,25,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="157"/>
+                    <TextBox x:Name="tu_subdistrict" Grid.Column="2" HorizontalAlignment="Left" Height="23" Margin="485,305,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="157"/>
+                    <TextBox x:Name="tu_regency" Grid.Column="2" HorizontalAlignment="Left" Height="23" Margin="485,271,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="157"/>
+                    <TextBox x:Name="tu_province" Grid.Column="2" HorizontalAlignment="Left" Height="23" Margin="485,235,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="157"/>
+                    <TextBox x:Name="tu_bornplace" Grid.Column="2" HorizontalAlignment="Left" Height="23" Margin="485,165,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="157"/>
+                    <TextBox x:Name="tu_identitynumber" Grid.Column="2" HorizontalAlignment="Left" Height="23" Margin="485,95,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="157"/>
+                    <TextBox x:Name="tu_identiytype" Grid.Column="2" HorizontalAlignment="Left" Height="23" Margin="485,60,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="157"/>
+                    <TextBox x:Name="tu_pictureidentity" Grid.Column="2" HorizontalAlignment="Left" Height="23" Margin="795,305,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="157"/>
+                    <TextBox x:Name="tu_picturenpwp" Grid.Column="2" HorizontalAlignment="Left" Height="23" Margin="795,270,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="157"/>
+                    <TextBox x:Name="tu_numbernpwp" Grid.Column="2" HorizontalAlignment="Left" Height="23" Margin="795,235,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="157"/>
+                    <TextBox x:Name="tu_bankaccount" Grid.Column="2" HorizontalAlignment="Left" Height="23" Margin="795,166,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="157"/>
+                    <TextBox x:Name="tu_password" Grid.Column="2" HorizontalAlignment="Left" Height="23" Margin="795,132,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="157"/>
+                    <TextBox x:Name="tu_username" Grid.Column="2" HorizontalAlignment="Left" Height="23" Margin="795,96,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="157"/>
+                    <TextBox x:Name="tu_email" Grid.Column="2" HorizontalAlignment="Left" Height="23" Margin="795,59,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="157"/>
+                    <TextBox x:Name="tu_address" Grid.Column="2" HorizontalAlignment="Left" Height="23" Margin="795,26,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="157"/>
+                    <DatePicker x:Name="tu_borndate" Grid.Column="2" HorizontalAlignment="Left" Margin="485,201,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.01,0.542" Width="157"/>
+                    <Button x:Name="user_save" Content="SAVE" Grid.Column="2" HorizontalAlignment="Left" Margin="546,374,0,0" VerticalAlignment="Top" Width="86" Height="30" FontSize="16" FontWeight="Bold" Foreground="White" Background="#FF1853B9" Click="user_save_Click"/>
+                    <Button x:Name="usr_delete" Content="DELETE" Grid.Column="2" HorizontalAlignment="Left" Margin="744,374,0,0" VerticalAlignment="Top" Width="86" Height="30" FontSize="16" FontWeight="Bold" Foreground="White" Background="Red" Click="usr_delete_Click"/>
+                    <Button x:Name="user_edit" Content="EDIT" Grid.Column="2" HorizontalAlignment="Left" Margin="644,374,0,0" VerticalAlignment="Top" Width="86" Height="30" FontSize="16" FontWeight="Bold" Foreground="White" Background="#FFF74B0B" Click="user_edit_Click"/>
+                    <TextBox x:Name="tu_role" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="157" Grid.Column="2" Margin="795,202,0,0"/>
+                    <TextBox x:Name="tu_gender" Grid.Column="2" HorizontalAlignment="Left" Height="23" Margin="485,129,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="157"/>
+                    <ComboBox ItemsSource="{Binding}" SelectedValuePath="ID" DisplayMemberPath="NAME" x:Name="crole" Grid.Column="2" HorizontalAlignment="Left" Margin="398,363,0,0" VerticalAlignment="Top" Width="120"/>
+
+                </Grid>
+            </TabItem>
+            <TabItem Header="ROLES">
+                <Grid Background="#FFE5E5E5">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="11*"/>
+                        <ColumnDefinition Width="16*"/>
+                        <ColumnDefinition Width="1013*"/>
+                    </Grid.ColumnDefinitions>
+                    <DataGrid AutoGenerateColumns="False" x:Name="dataGridRole" HorizontalAlignment="Left" VerticalAlignment="Top" Height="418" Width="324" SelectionChanged="dataGridRole_SelectionChanged" Grid.ColumnSpan="3">
+                        <DataGrid.Columns>
+                            <DataGridTextColumn Header="Id" Binding="{Binding ID}"/>
+                            <DataGridTextColumn Header="Role Name" Binding="{Binding NAME}"/>
+                        </DataGrid.Columns>
+                    </DataGrid>
+                    <Label x:Name="label1" Content="NAME" HorizontalAlignment="Left" Margin="374,138,0,0" VerticalAlignment="Top" Width="152" Height="50" FontFamily="Modern No. 20" FontSize="21.333" Grid.Column="2"/>
+                    <TextBox x:Name="tr_name" HorizontalAlignment="Left" Height="50" Margin="530,138,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="228" Grid.Column="2"/>
+                    <Button x:Name="role_save" Content="SAVE" HorizontalAlignment="Left" Margin="424,335,0,0" VerticalAlignment="Top" Width="102" Height="35" FontSize="16" FontWeight="Bold" Foreground="White" Background="#FF1B82FF" Click="role_save_Click" Grid.Column="2"/>
+                    <Button x:Name="role_edit" Content="EDIT" HorizontalAlignment="Left" Margin="558,335,0,0" VerticalAlignment="Top" Width="102" Height="35" FontSize="16" FontWeight="Bold" Foreground="White" Background="#FFFF6A02" Click="role_edit_Click" Grid.Column="2"/>
+                    <Button x:Name="role_delete" Content="DELETE" HorizontalAlignment="Left" Margin="694,335,0,0" VerticalAlignment="Top" Width="102" Height="35" FontSize="16" FontWeight="Bold" Foreground="White" Background="#FFF10000" Click="role_delete_Click" Grid.Column="2"/>
+
+                </Grid>
+            </TabItem>
+        </TabControl>
+    </Grid>
+</Window>
